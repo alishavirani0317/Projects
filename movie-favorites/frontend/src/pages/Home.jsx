@@ -6,6 +6,7 @@ function Home () {
     //array of diff movies and renders them dynamically 
 
     //define piece of state that handles logic/state thats happening in our component
+    // when a state change occurs, the entire component is reran or re rendered
     const [searchQuery, setSearchQuery] = useState("");
 
     const movies = [
