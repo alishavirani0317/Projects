@@ -10,7 +10,9 @@ function Home () {
         {id: 3, title: "The Matrix", release_date: "1998" },
     ]
 
+    const handleSearch = () => {
 
+    }
     //display movies in rows?
 
     //.map function iterate over all values inside movies array
@@ -18,6 +20,14 @@ function Home () {
     // displays component for every single movie 
     // add .key to component we return, react needs to know what component to update
     return <div className="home">
+        {/* This is the form to be able to search for movies */}
+        <form onSubmit={handleSearch} className="search-form">
+            <input type="text" 
+            placeholder="Search for movies..." 
+            className="search-input"
+            />
+            <button type="submit" className="search-button"> Search</button>
+        </form>
         <div className="movies-grid">
             {movies.map((movie) => (
                 <MovieCard movie={movie} key={movie.id}/>
