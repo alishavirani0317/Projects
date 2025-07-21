@@ -1,21 +1,23 @@
 import './App.css';
 //import MovieCard from './components /MovieCard';
-import Home from "./pages/Home";
+import Favorites from "./pages/Favorites";
+import Home from "./pages/Home"
+import {Routes, Route} from "react-router-dom"
 //where react stuff goes 
 
 //component start with capital letter
 function App() {
-
-  return (
-    //return just one root element per level
-    // fragment -> empty tag <>
-    <>
-    <Home/>
-    </>
+  //return just one root element per level
+  // fragment -> empty tag <>
+  return ( 
+    <main className="main-content">
+      <Routes>
+         <Route path="/" element={<Home />}/>
+         <Route path="/favorites" element={<Favorites />}/>
+      </Routes>
+    </main>
   );
 }
 // add prop : set of curly braces
-
-
 
 export default App;
