@@ -25,3 +25,6 @@ function Home () {
         </div>
     </div>
 }
+
+// to show this 
+export default Home

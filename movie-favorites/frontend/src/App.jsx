@@ -1,17 +1,16 @@
 import './App.css';
-import MovieCard from './components /MovieCard';
+//import MovieCard from './components /MovieCard';
+import Home from "./pages/Home";
 //where react stuff goes 
 
 //component start with capital letter
 function App() {
-  const movieNumber = 2; 
 
   return (
     //return just one root element per level
     // fragment -> empty tag <>
-
     <>
-      {movieNumber === 1  && <MovieCard movie={{title: "Alisha's Film", release_date:"2024"}} />}
+    <Home/>
     </>
   );
 }
