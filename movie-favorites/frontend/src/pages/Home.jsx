@@ -12,6 +12,11 @@ function Home () {
 
 
     //display movies in rows?
+
+    //.map function iterate over all values inside movies array
+    // and passes it to fucntion needs to return jsx code (component)
+    // displays component for every single movie 
+    // add .key to component we return, react needs to know what component to update
     return <div className="home">
         <div className="movies-grid">
             {movies.map((movie) => (
