@@ -1,5 +1,5 @@
 import MovieCard from "../components /MovieCard"
-import {useState} from "react"
+ import {useState} from "react"
 
 //contains entire user interface for home page
 function Home () {
