@@ -31,9 +31,20 @@ function Home () {
         loadPopularMovies()
     }, [])
  
-    const handleSearch = (e) => {
+    const handleSearch = async (e) => {
         e.preventDefault() // makes it so what u type in the search box doesnt disappear everytime u hit search 
-        alert(searchQuery)
+        if(!searchQuery.trim()) return
+        if (loading) return
+        setLoading(true)
+        try {
+            const searchResults = await searchMovies(searchQuery)
+            setMovies(searchResults)
+            setError(error)
+        } catch {
+            setError("Failed to search movies... ")
+        }finally {
+            setLoading(false)
+        }
         setSearchQuery("")
     };
     //display movies in rows?
