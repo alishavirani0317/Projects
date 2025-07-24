@@ -1,5 +1,5 @@
 //movie card component
-
+import "../css/MovieCard.css"
 function MovieCard({movie}){
     //func triggered when we click button
 
