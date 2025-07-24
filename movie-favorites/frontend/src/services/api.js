@@ -1,7 +1,7 @@
 //separate file for all api calls
 
-const API_KEY = "41cd61d216f257268cfea8c4bdf9b80e"
-const BASE_URL = "https://api.themoviedb.org/3"
+const API_KEY = "41cd61d216f257268cfea8c4bdf9b80e";
+const BASE_URL = "https://api.themoviedb.org/3";
 
 //most popular movies
 

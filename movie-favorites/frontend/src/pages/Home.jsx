@@ -1,6 +1,8 @@
 import MovieCard from "../components /MovieCard"
-import {useState} from "react"
+import {useState, useEffect} from "react"
+import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css"
+
 //contains entire user interface for home page
 function Home () {
     //array of diff movies and renders them dynamically 
@@ -8,13 +10,27 @@ function Home () {
     //define piece of state that handles logic/state thats happening in our component
     // when a state change occurs, the entire component is reran or re render
     const [searchQuery, setSearchQuery] = useState("");
+    // useEffect lets u add side effects to functions/components & define when they should run 
+    const [movies, setMovies] = useState([]);
+    const [error, setError]  = useState(null);
+    const [loading, setLoading] = useState(true);
 
-    const movies = [
-        {id: 1, title: "John Wick", release_date: "2020" },
-        {id: 2, title  : "Terminator", release_date: "1999" },
-        {id: 3, title: "The Matrix", release_date: "1998" },
-    ];
-
+    useEffect(()=> {
+        const loadPopularMovies = async() => {
+            try {
+                const popularMovies = await getPopularMovies()
+                setMovies(popularMovies)
+            } catch(err){
+                console.log(err)
+                setError("Failed to load movies .. ")
+            }
+            finally {
+                setLoading(false)
+            }
+        }
+        loadPopularMovies()
+    }, [])
+ 
     const handleSearch = (e) => {
         e.preventDefault() // makes it so what u type in the search box doesnt disappear everytime u hit search 
         alert(searchQuery)
