@@ -4,7 +4,7 @@ function MovieCard({movie}){
     //func triggered when we click button
 
     function onFavoriteClick(){
-        alert("clicked")
+        
 
     }
 

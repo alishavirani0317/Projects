@@ -1,8 +1,9 @@
 import './css/App.css';
 //import MovieCard from './components /MovieCard';
 import Favorites from "./pages/Favorites";
-import Home from "./pages/Home"
-import {Routes, Route} from "react-router-dom"
+import Home from "./pages/Home";
+import {Routes, Route} from "react-router-dom";
+import { MovieProvider } from './contexts/MovieContext';
 import NavBar from './components /NavBar';
 //where react stuff goes 
 
@@ -11,7 +12,7 @@ function App() {
   //return just one root element per level
   // fragment -> empty tag <>
   return ( 
-    <div>
+    <MovieProvider>
       <NavBar />
     <main className="main-content">
       <Routes>
@@ -19,7 +20,7 @@ function App() {
          <Route path="/favorites" element={<Favorites />}/>
       </Routes>
     </main>
-    </div>
+    </MovieProvider>
   );
 }
 // add prop : set of curly braces

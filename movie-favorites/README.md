@@ -14,5 +14,12 @@ components:
     moviecard.jsx
     navbar.jsx
 
+contexts:
+    MovieContext.jsx
+
 edited
     app.jsx
+
+used context: allows state to be globally avaiable to anything that's within the provided context
+
+used local storage
