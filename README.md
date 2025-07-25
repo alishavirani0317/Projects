@@ -47,7 +47,7 @@ These projects demonstrate my understanding of data structures, algorithms, memo
 
 I'm a junior CS major at UIUC with a Business minor and a 4.0 GPA. My background includes both software development and IT infrastructure experience, most recently as an intern at American Standard Circuits where I led internal tooling improvements. I enjoy building projects that solve real problems and continuously expanding my technical skill set.
 
-For resume, LinkedIn, or portfolio links, please check my GitHub profile:  
+Please check my GitHub profile:  
  [github.com/alishavirani0317](https://github.com/alishavirani0317)
 
 ---
