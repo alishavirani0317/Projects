@@ -1,6 +1,6 @@
 # Alisha Virani — Software Projects Portfolio
 
-Welcome! This repository showcases a variety of software engineering and computer science projects I've developed throughout my time as a CS student at the University of Illinois Urbana-Champaign. My work spans full-stack development, algorithmic programming, and data structures — often applying both frontend and backend technologies.
+Welcome! This repository showcases a variety of software engineering and computer science projects I've developed throughout my time as a CS student at the University of Illinois Urbana-Champaign. My projects span full-stack development, algorithmic programming, and data structures, mostly using both frontend and backend technologies.
 
 This repo is designed to give prospective employers, collaborators, and fellow developers a quick look into the scope and quality of my work. Please explore the folders below to see live projects, source code, and documentation.
 
@@ -52,4 +52,4 @@ Please check my GitHub profile:
 
 ---
 
-Feel free to explore any subfolders to see source code and README files for each individual project. If you're a recruiter or engineer and would like to discuss any of these in more detail — I'm always open to feedback and opportunities!
+Feel free to explore any subfolders to see source code and README files for each individual project. If you're a recruiter or engineer and would like to discuss any of these in more detail. I'm always open to feedback and opportunities!
