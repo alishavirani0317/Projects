@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="profile-body">
+    <div class="profile-header">
+      <h1>Profile</h1>
+      <a href="/" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+      </a>
+    </div>
+
+    <div class="profile-layout">
+      <!-- LEFT: user info -->
+      <section class="profile-card">
+        <div class="profile-avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <h2 class="profile-name"><%= user.name %></h2>
+
+        <div class="profile-field">
+          <span class="field-label">User ID:</span>
+          <span class="field-value"><%= user.userId %></span>
+        </div>
+
+        <div class="profile-field">
+          <span class="field-label">Email:</span>
+          <span class="field-value"><%= user.email %></span>
+        </div>
+
+        <div class="profile-field">
+          <span class="field-label">State:</span>
+          <span class="field-value"><%= user.state %></span>
+        </div>
+
+        <div class="profile-field">
+          <span class="field-label">County:</span>
+          <span class="field-value"><%= user.county %></span>
+        </div>
+      </section>
+
+      <!-- RIGHT: past observations -->
+      <section class="observations-card">
+        <div class="observations-header">
+          <h2>Past Observations</h2>
+          <p class="observations-sub">
+            View, edit, or delete your submitted observations.
+          </p>
+        </div>
+
+        <div id="observationsContainer" class="observations-cards">
+          <!-- Cards will be rendered here by client-side JS -->
+        </div>
+
+        <!-- Modal / popup for enlarged card -->
+        <div id="obsModal" class="obs-modal" style="display:none">
+          <div class="obs-modal-content">
+            <button id="obsModalClose" class="obs-modal-close">×</button>
+            <h3 id="modalCategory"></h3>
+            <p><strong>EIS Sector:</strong> <span id="modalEis"></span></p>
+            <p><strong>State:</strong> <span id="modalState"></span></p>
+
+            <div class="obs-modal-actions">
+              <button id="obsEditBtn" class="btn">Edit</button>
+              <button id="obsDeleteBtn" class="btn btn-danger">Delete</button>
+            </div>
+
+            <!-- edit form (hidden initially) -->
+            <div id="obsEditForm" style="display:none; margin-top:12px">
+              <label>State</label>
+              <select id="editState" style="width:100%; padding:8px; margin:6px 0"></select>
+
+              <label>EIS Sector</label>
+              <input id="editEis" type="text" readonly style="width:100%; padding:8px; margin:6px 0; background:#f5f5f5" />
+
+              <label>Observation Category</label>
+              <select id="editCategory" style="width:100%; padding:8px; margin:6px 0"></select>
+
+              <div style="text-align:right; margin-top:8px">
+                <button id="obsSaveBtn" class="btn">Save</button>
+                <button id="obsCancelBtn" class="btn">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          .observations-cards { display:flex; flex-wrap:wrap; gap:12px; padding:12px; }
+          .obs-card { background:#fff; border:1px solid #ddd; border-radius:8px; padding:12px; width:220px; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.08); transition:transform .12s; }
+          .obs-card:hover { transform:translateY(-4px); }
+          .obs-card .obs-state { font-weight:600; }
+          .obs-card .obs-eis { color:#555; font-size:0.95em; margin-top:6px; }
+          .obs-card .obs-category { color:#333; margin-top:8px; }
+
+          .obs-modal { position:fixed; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:1000; }
+          .obs-modal-content { background:white; padding:20px; border-radius:10px; width:90%; max-width:480px; position:relative; }
+          .obs-modal-close { position:absolute; right:10px; top:8px; border:none; background:transparent; font-size:24px; cursor:pointer; }
+        </style>
+
+        <script>
+          (function() {
+            const container = document.getElementById('observationsContainer');
+            const modal = document.getElementById('obsModal');
+            const modalClose = document.getElementById('obsModalClose');
+            const modalCategory = document.getElementById('modalCategory');
+            const modalEis = document.getElementById('modalEis');
+            const modalState = document.getElementById('modalState');
+            const obsEditBtn = document.getElementById('obsEditBtn');
+            const obsDeleteBtn = document.getElementById('obsDeleteBtn');
+            const obsEditForm = document.getElementById('obsEditForm');
+            const editState = document.getElementById('editState');
+            const editEis = document.getElementById('editEis');
+            const editCategory = document.getElementById('editCategory');
+            const obsSaveBtn = document.getElementById('obsSaveBtn');
+            const obsCancelBtn = document.getElementById('obsCancelBtn');
+
+            function renderCards(observations) {
+              container.innerHTML = '';
+              if (!observations || !observations.length) {
+                container.innerHTML = '<p class="no-observations">You don\'t have any observations yet.</p>';
+                return;
+              }
+              observations.forEach(obs => {
+                const card = document.createElement('div');
+                card.className = 'obs-card';
+                card.tabIndex = 0;
+                card.innerHTML = `
+                  <div class="obs-state">${escapeHtml(obs.state || '')}</div>
+                  <div class="obs-eis">${escapeHtml(obs.eis_sector || '')}</div>
+                  <div class="obs-category">${escapeHtml(obs.observation_category || '')}</div>
+                `;
+                card.addEventListener('click', () => openModal(obs));
+                card.addEventListener('keypress', (e) => { if (e.key === 'Enter') openModal(obs); });
+                container.appendChild(card);
+              });
+            }
+
+            let currentObs = null;
+            function openModal(obs) {
+              currentObs = obs;
+              modalCategory.textContent = obs.observation_category || '';
+              modalEis.textContent = obs.eis_sector || '';
+              modalState.textContent = obs.state || '';
+              // hide edit form
+              obsEditForm.style.display = 'none';
+              obsEditBtn.style.display = '';
+              obsDeleteBtn.style.display = '';
+              modal.style.display = 'flex';
+            }
+
+            // canonical mapping from observation category -> EIS sector (kept in sync with main form)
+            const observationToSector = {
+              "Farms": "Fuel Comb - Comm/Institutional - Biomass",
+              "Airports": "Fuel Comb - Comm/Institutional - Natural Gas",
+              "Factories": "Fuel Comb - Comm/Institutional - Oil",
+              "Textile Mill": "Fuel Comb - Industrial Boilers, ICEs - Biomass",
+              "Power Plants": "Fuel Comb - Industrial Boilers, ICEs - Natural Gas",
+              "Space Heating": "Fuel Comb - Industrial Boilers, ICEs - Oil",
+              "Furnace": "Fuel Comb - Residential - Natural Gas",
+              "Fireplaces": "Fuel Comb - Residential - Wood",
+              "Non-Diesel Passenger Cars": "Mobile - On-Road non-Diesel Light Duty Vehicles",
+              "Restaurants": "Commercial Cooking",
+              "Crop Burning": "Fires - Agricultural Field Burning",
+              "Controlled Forest Fire": "Fires - Prescribed Fires",
+              "Semi-Trucks": "Mobile - On-Road Diesel Heavy Duty Vehicles",
+              "Diesel Passenger Cars": "Mobile - On-Road Diesel Light Duty Vehicles",
+              "Hybrid Commercial Vehicles": "Mobile - On-Road non-Diesel Heavy Duty Vehicles",
+              "Landfill": "Waste Disposal",
+              "Oil Refineries": "Industrial Processes - Oil & Gas Production",
+              "Trains": "Mobile - Locomotives",
+              "Forest Fire": "Fires - Wildfires",
+              "Coal Mine": "Fuel Comb - Comm/Institutional - Coal",
+              "Chemical Plants": "Fuel Comb - Industrial Boilers, ICEs - Coal",
+              "Petroleum Refinery": "Industrial Processes - Petroleum Refineries"
+            };
+
+            const observationCategories = Object.keys(observationToSector);
+
+            // populate state and category selects (states fetched from public data file if available)
+            async function populateEditSelectors() {
+              // populate categories
+              try {
+                editCategory.innerHTML = '';
+                observationCategories.forEach(cat => {
+                  const opt = document.createElement('option');
+                  opt.value = cat;
+                  opt.textContent = cat;
+                  editCategory.appendChild(opt);
+                });
+              } catch (err) {
+                console.error('Could not populate categories', err);
+              }
+
+              // populate states from /data/us-states.json (GeoJSON or array)
+              try {
+                const resp = await fetch('/data/us-states.json');
+                if (resp.ok) {
+                  const json = await resp.json();
+                  let names = [];
+                  if (Array.isArray(json)) {
+                    names = json.map(s => s.name || s.properties?.name).filter(Boolean);
+                  } else if (json.features) {
+                    names = json.features.map(f => f.properties?.name).filter(Boolean);
+                  }
+                  // remove District of Columbia from the list
+                  names = names.map(n => String(n).trim()).filter(Boolean).filter(n => n.toLowerCase() !== 'district of columbia');
+                  if (names.length) {
+                    editState.innerHTML = '';
+                    names.forEach(n => {
+                      const o = document.createElement('option');
+                      o.value = n;
+                      o.textContent = n;
+                      editState.appendChild(o);
+                    });
+                    return;
+                  }
+                }
+              } catch (err) {
+                console.warn('State list fetch failed, falling back', err);
+              }
+
+              // fallback minimal state list
+              const fallback = ['California','New York','Texas','Florida','Illinois'];
+              editState.innerHTML = '';
+              fallback.forEach(n => {
+                const o = document.createElement('option');
+                o.value = n;
+                o.textContent = n;
+                editState.appendChild(o);
+              });
+            }
+
+            // when the category dropdown changes, update the EIS field automatically
+            editCategory.addEventListener('change', () => {
+              const cat = editCategory.value;
+              editEis.value = observationToSector[cat] || '';
+            });
+
+            // Delete handler
+            obsDeleteBtn.addEventListener('click', async () => {
+              if (!currentObs) return;
+              if (!confirm('Delete this observation?')) return;
+              try {
+                const resp = await fetch('/observations', {
+                  method: 'DELETE',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ eis_sector: currentObs.eis_sector, observation_category: currentObs.observation_category })
+                });
+                const data = await resp.json();
+                if (resp.ok) {
+                  modal.style.display = 'none';
+                  await loadObservations();
+                } else {
+                  alert('Delete failed: ' + (data.message || resp.statusText));
+                }
+              } catch (err) {
+                console.error('Delete error', err);
+                alert('Network error');
+              }
+            });
+
+            // Edit flow
+            obsEditBtn.addEventListener('click', () => {
+              if (!currentObs) return;
+              obsEditForm.style.display = '';
+              // set state/category and update EIS from our mapping
+              editState.value = currentObs.state || '';
+              // if the category exists in our list, select it; otherwise add and select it
+              if (![...editCategory.options].some(o => o.value === currentObs.observation_category)) {
+                const opt = document.createElement('option');
+                opt.value = currentObs.observation_category || '';
+                opt.textContent = currentObs.observation_category || '';
+                editCategory.appendChild(opt);
+              }
+              editCategory.value = currentObs.observation_category || '';
+              editEis.value = observationToSector[editCategory.value] || currentObs.eis_sector || '';
+            });
+
+            obsCancelBtn.addEventListener('click', (e) => {
+              e.preventDefault();
+              obsEditForm.style.display = 'none';
+            });
+
+            obsSaveBtn.addEventListener('click', async (e) => {
+              e.preventDefault();
+              if (!currentObs) return;
+              const payload = {
+                old_eis_sector: currentObs.eis_sector,
+                old_observation_category: currentObs.observation_category,
+                state: editState.value,
+                eis_sector: editEis.value,
+                observation_category: editCategory.value
+              };
+              try {
+                const resp = await fetch('/observations', {
+                  method: 'PUT',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(payload)
+                });
+                const data = await resp.json();
+                if (resp.ok) {
+                  modal.style.display = 'none';
+                  await loadObservations();
+                } else {
+                  alert('Update failed: ' + (data.message || resp.statusText));
+                }
+              } catch (err) {
+                console.error('Update error', err);
+                alert('Network error');
+              }
+            });
+
+            modalClose.addEventListener('click', () => modal.style.display = 'none');
+            modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+
+            function escapeHtml(str) { return String(str || '').replace(/[&<>\"]+/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s])); }
+
+            // fetch observations for the current user
+            async function loadObservations() {
+              try {
+                const resp = await fetch('/observations');
+                if (!resp.ok) throw new Error('Failed to load');
+                const data = await resp.json();
+                renderCards(data);
+              } catch (err) {
+                console.error('Could not load observations', err);
+                container.innerHTML = '<p class="no-observations">Could not load observations.</p>';
+              }
+            }
+
+            // load selectors and observations on page ready
+            document.addEventListener('DOMContentLoaded', async () => {
+              try { await populateEditSelectors(); } catch (e) { console.warn(e); }
+              loadObservations();
+            });
+          })();
+        </script>
+      </section>
+    </div>
+  </body>
+</html>

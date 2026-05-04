@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      .table-container { max-width: 900px; margin: 24px auto; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { padding: 8px 10px; border: 1px solid #ddd; text-align: left; }
+      th { background: #f5f5f5; }
+      caption { font-weight: bold; margin-bottom: 8px; }
+      .back { margin: 12px; display: inline-block; }
+    </style>
+  </head>
+  <body>
+    <a class="back" href="/home">← Back to Home</a>
+    <div class="table-container">
+      <div style="margin-bottom:12px">
+        <a href="/state_averages?format=json" id="downloadJson">Download raw JSON</a>
+      </div>
+      <table id="averagesTable">
+        <caption>Average Median AQI by State and Year</caption>
+        <thead id="tableHead"></thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script>
+      async function loadAverages() {
+        try {
+          const resp = await fetch('/state_averages?format=json');
+          if (!resp.ok) throw new Error('Failed to fetch JSON');
+          const payload = await resp.json();
+          if (!payload.success) throw new Error('Unexpected payload');
+
+          const { years, states, data } = payload;
+          const thead = document.getElementById('tableHead');
+          const tbody = document.getElementById('tableBody');
+
+          // build header
+          thead.innerHTML = '';
+          const headRow = document.createElement('tr');
+          const thState = document.createElement('th');
+          thState.textContent = 'State';
+          headRow.appendChild(thState);
+          years.forEach(y => {
+            const th = document.createElement('th');
+            th.textContent = y;
+            headRow.appendChild(th);
+          });
+          thead.appendChild(headRow);
+
+          // build rows
+          tbody.innerHTML = '';
+          states.forEach(st => {
+            const tr = document.createElement('tr');
+            const tdState = document.createElement('td');
+            tdState.textContent = st;
+            tr.appendChild(tdState);
+            years.forEach(y => {
+              const td = document.createElement('td');
+              const val = data[st] && (y in data[st]) ? data[st][y] : null;
+              td.textContent = (val === null || val === undefined) ? '—' : Number(val).toFixed(2);
+              tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+          });
+        } catch (err) {
+          console.error('Error loading averages:', err);
+          const table = document.getElementById('averagesTable');
+          table.innerHTML = '<caption>Error loading data</caption>';
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', loadAverages);
+    </script>
+  </body>
+</html>

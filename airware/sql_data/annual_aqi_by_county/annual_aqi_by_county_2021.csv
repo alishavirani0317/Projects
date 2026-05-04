@@ -1,0 +1,1006 @@
+State,County,Year,Median_AQI
+Alabama,Baldwin,2021,37
+Alabama,Clay,2021,36
+Alabama,DeKalb,2021,37
+Alabama,Elmore,2021,32
+Alabama,Etowah,2021,38
+Alabama,Jefferson,2021,56
+Alabama,Lawrence,2021,28
+Alabama,Madison,2021,49
+Alabama,Mobile,2021,53
+Alabama,Montgomery,2021,44
+Alabama,Morgan,2021,47
+Alabama,Russell,2021,47
+Alabama,Shelby,2021,35
+Alabama,Sumter,2021,35
+Alabama,Tuscaloosa,2021,34
+Alaska,Aleutians East ,2021,13
+Alaska,Anchorage ,2021,28
+Alaska,Denali ,2021,33
+Alaska,Fairbanks North Star ,2021,42
+Alaska,Juneau ,2021,20
+Alaska,Kenai Peninsula ,2021,9
+Alaska,Matanuska-Susitna ,2021,15
+Alaska,North Slope ,2021,5
+Arizona,Apache,2021,15
+Arizona,Cochise,2021,45
+Arizona,Coconino,2021,46
+Arizona,Gila,2021,46
+Arizona,La Paz,2021,46
+Arizona,Maricopa,2021,122
+Arizona,Mohave,2021,19
+Arizona,Navajo,2021,44
+Arizona,Pima,2021,56
+Arizona,Pinal,2021,70
+Arizona,Santa Cruz,2021,52
+Arizona,Yavapai,2021,44
+Arizona,Yuma,2021,50
+Arkansas,Arkansas,2021,39
+Arkansas,Ashley,2021,42
+Arkansas,Clark,2021,32
+Arkansas,Crittenden,2021,45
+Arkansas,Garland,2021,45
+Arkansas,Jackson,2021,39
+Arkansas,Newton,2021,37
+Arkansas,Polk,2021,40
+Arkansas,Pulaski,2021,54
+Arkansas,Union,2021,48
+Arkansas,Washington,2021,48
+California,Alameda,2021,53
+California,Amador,2021,37
+California,Butte,2021,53
+California,Calaveras,2021,46
+California,Colusa,2021,55
+California,Contra Costa,2021,47
+California,Del Norte,2021,31
+California,El Dorado,2021,43
+California,Fresno,2021,68
+California,Glenn,2021,42
+California,Humboldt,2021,29
+California,Imperial,2021,60
+California,Inyo,2021,61
+California,Kern,2021,84
+California,Kings,2021,64
+California,Lake,2021,33
+California,Los Angeles,2021,79
+California,Madera,2021,58
+California,Marin,2021,38
+California,Mariposa,2021,49
+California,Mendocino,2021,46
+California,Merced,2021,54
+California,Mono,2021,27
+California,Monterey,2021,41
+California,Napa,2021,41
+California,Nevada,2021,50
+California,Orange,2021,55
+California,Placer,2021,58
+California,Plumas,2021,67
+California,Riverside,2021,89
+California,Sacramento,2021,55
+California,San Benito,2021,41
+California,San Bernardino,2021,87
+California,San Diego,2021,67
+California,San Francisco,2021,39
+California,San Joaquin,2021,55
+California,San Luis Obispo,2021,53
+California,San Mateo,2021,36
+California,Santa Barbara,2021,44
+California,Santa Clara,2021,53
+California,Santa Cruz,2021,37
+California,Shasta,2021,46
+California,Siskiyou,2021,43
+California,Solano,2021,44
+California,Sonoma,2021,37
+California,Stanislaus,2021,61
+California,Sutter,2021,59
+California,Tehama,2021,47
+California,Trinity,2021,38
+California,Tulare,2021,81
+California,Tuolumne,2021,41
+California,Ventura,2021,53
+California,Yolo,2021,42
+Colorado,Adams,2021,49
+Colorado,Alamosa,2021,12
+Colorado,Arapahoe,2021,46
+Colorado,Archuleta,2021,45
+Colorado,Boulder,2021,52
+Colorado,Chaffee,2021,58
+Colorado,Clear Creek,2021,49
+Colorado,Delta,2021,43
+Colorado,Denver,2021,55
+Colorado,Douglas,2021,48
+Colorado,El Paso,2021,47
+Colorado,Fremont,2021,15
+Colorado,Garfield,2021,49
+Colorado,Gilpin,2021,46
+Colorado,Grand,2021,48
+Colorado,Gunnison,2021,46
+Colorado,Jackson,2021,7
+Colorado,Jefferson,2021,47
+Colorado,La Plata,2021,47
+Colorado,Larimer,2021,54
+Colorado,Mesa,2021,46
+Colorado,Montezuma,2021,44
+Colorado,Park,2021,48
+Colorado,Pitkin,2021,14
+Colorado,Prowers,2021,19
+Colorado,Pueblo,2021,23
+Colorado,Rio Blanco,2021,48
+Colorado,Routt,2021,15
+Colorado,San Juan,2021,9
+Colorado,San Miguel,2021,48
+Colorado,Weld,2021,54
+Connecticut,Fairfield,2021,46
+Connecticut,Hartford,2021,42
+Connecticut,Litchfield,2021,38
+Connecticut,Middlesex,2021,39
+Connecticut,New Haven,2021,46
+Connecticut,New London,2021,39
+Connecticut,Tolland,2021,39
+Connecticut,Windham,2021,34
+Country Of Mexico,BAJA CALIFORNIA NORTE,2021,69
+Country Of Mexico,SONORA,2021,34
+Delaware,Kent,2021,42
+Delaware,New Castle,2021,48
+Delaware,Sussex,2021,40
+District Of Columbia,District of Columbia,2021,51
+Florida,Alachua,2021,39
+Florida,Baker,2021,42
+Florida,Bay,2021,46
+Florida,Brevard,2021,45
+Florida,Broward,2021,49
+Florida,Citrus,2021,44
+Florida,Collier,2021,42
+Florida,Columbia,2021,44
+Florida,Duval,2021,52
+Florida,Escambia,2021,49
+Florida,Flagler,2021,33
+Florida,Hamilton,2021,46
+Florida,Highlands,2021,33
+Florida,Hillsborough,2021,51
+Florida,Holmes,2021,48
+Florida,Indian River,2021,36
+Florida,Lake,2021,34
+Florida,Lee,2021,41
+Florida,Leon,2021,48
+Florida,Liberty,2021,32
+Florida,Manatee,2021,32
+Florida,Marion,2021,42
+Florida,Martin,2021,44
+Florida,Miami-Dade,2021,46
+Florida,Okaloosa,2021,33
+Florida,Orange,2021,33
+Florida,Osceola,2021,33
+Florida,Palm Beach,2021,43
+Florida,Pasco,2021,35
+Florida,Pinellas,2021,47
+Florida,Polk,2021,45
+Florida,Putnam,2021,16
+Florida,Santa Rosa,2021,44
+Florida,Sarasota,2021,45
+Florida,Seminole,2021,42
+Florida,St. Lucie,2021,33
+Florida,Volusia,2021,47
+Florida,Wakulla,2021,41
+Georgia,Bibb,2021,48
+Georgia,Charlton,2021,25
+Georgia,Chatham,2021,51
+Georgia,Chattooga,2021,33
+Georgia,Clarke,2021,49
+Georgia,Clayton,2021,44
+Georgia,Cobb,2021,41
+Georgia,Coffee,2021,35
+Georgia,Columbia,2021,33
+Georgia,Dawson,2021,36
+Georgia,DeKalb,2021,49
+Georgia,Dougherty,2021,51
+Georgia,Douglas,2021,38
+Georgia,Floyd,2021,38
+Georgia,Fulton,2021,53
+Georgia,Glynn,2021,38
+Georgia,Gwinnett,2021,49
+Georgia,Hall,2021,46
+Georgia,Henry,2021,39
+Georgia,Houston,2021,49
+Georgia,Lowndes,2021,46
+Georgia,Murray,2021,38
+Georgia,Muscogee,2021,43
+Georgia,Pike,2021,36
+Georgia,Richmond,2021,51
+Georgia,Rockdale,2021,39
+Georgia,Sumter,2021,35
+Georgia,Walker,2021,53
+Georgia,Washington,2021,51
+Hawaii,Hawaii,2021,27
+Hawaii,Honolulu,2021,28
+Hawaii,Kauai,2021,17
+Hawaii,Maui,2021,21
+Idaho,Ada,2021,46
+Idaho,Bannock,2021,44
+Idaho,Benewah,2021,51
+Idaho,Blaine,2021,23
+Idaho,Boise,2021,49
+Idaho,Bonner,2021,37
+Idaho,Bonneville,2021,31
+Idaho,Butte,2021,42
+Idaho,Canyon,2021,46
+Idaho,Custer,2021,8
+Idaho,Franklin,2021,28
+Idaho,Idaho,2021,42
+Idaho,Kootenai,2021,31
+Idaho,Latah,2021,20
+Idaho,Lemhi,2021,47
+Idaho,Nez Perce,2021,34
+Idaho,Shoshone,2021,49
+Idaho,Twin Falls,2021,28
+Idaho,Valley,2021,41
+Illinois,Adams,2021,40
+Illinois,Champaign,2021,44
+Illinois,Clark,2021,34
+Illinois,Cook,2021,59
+Illinois,DuPage,2021,51
+Illinois,Effingham,2021,37
+Illinois,Hamilton,2021,48
+Illinois,Jersey,2021,45
+Illinois,Jo Daviess,2021,36
+Illinois,Kane,2021,44
+Illinois,Lake,2021,42
+Illinois,Macon,2021,51
+Illinois,Macoupin,2021,31
+Illinois,Madison,2021,57
+Illinois,McHenry,2021,49
+Illinois,McLean,2021,48
+Illinois,Peoria,2021,50
+Illinois,Randolph,2021,45
+Illinois,Rock Island,2021,49
+Illinois,Saint Clair,2021,53
+Illinois,Sangamon,2021,43
+Illinois,Will,2021,52
+Illinois,Winnebago,2021,49
+Indiana,Allen,2021,40
+Indiana,Bartholomew,2021,43
+Indiana,Boone,2021,33
+Indiana,Brown,2021,33
+Indiana,Carroll,2021,34
+Indiana,Clark,2021,52
+Indiana,Delaware,2021,37
+Indiana,Dubois,2021,43
+Indiana,Elkhart,2021,45
+Indiana,Floyd,2021,34
+Indiana,Greene,2021,38
+Indiana,Hamilton,2021,44
+Indiana,Hendricks,2021,33
+Indiana,Henry,2021,38
+Indiana,Howard,2021,44
+Indiana,Knox,2021,36
+Indiana,LaPorte,2021,37
+Indiana,Lake,2021,54
+Indiana,Madison,2021,48
+Indiana,Marion,2021,58
+Indiana,Monroe,2021,43
+Indiana,Perry,2021,36
+Indiana,Porter,2021,47
+Indiana,Posey,2021,32
+Indiana,Shelby,2021,33
+Indiana,Spencer,2021,42
+Indiana,St. Joseph,2021,52
+Indiana,Tippecanoe,2021,44
+Indiana,Vanderburgh,2021,51
+Indiana,Vigo,2021,51
+Indiana,Wabash,2021,35
+Indiana,Warrick,2021,35
+Indiana,Whitley,2021,47
+Iowa,Black Hawk,2021,47
+Iowa,Bremer,2021,40
+Iowa,Cerro Gordo,2021,19
+Iowa,Clinton,2021,55
+Iowa,Harrison,2021,39
+Iowa,Johnson,2021,52
+Iowa,Lee,2021,42
+Iowa,Linn,2021,52
+Iowa,Montgomery,2021,42
+Iowa,Muscatine,2021,45
+Iowa,Palo Alto,2021,43
+Iowa,Polk,2021,45
+Iowa,Pottawattamie,2021,44
+Iowa,Scott,2021,53
+Iowa,Van Buren,2021,44
+Iowa,Woodbury,2021,42
+Kansas,Chase,2021,27
+Kansas,Ford,2021,17
+Kansas,Johnson,2021,46
+Kansas,Leavenworth,2021,34
+Kansas,Neosho,2021,51
+Kansas,Sedgwick,2021,46
+Kansas,Shawnee,2021,49
+Kansas,Sherman,2021,17
+Kansas,Sumner,2021,52
+Kansas,Trego,2021,43
+Kansas,Wyandotte,2021,53
+Kentucky,Bell,2021,52
+Kentucky,Boone,2021,39
+Kentucky,Boyd,2021,44
+Kentucky,Bullitt,2021,37
+Kentucky,Campbell,2021,44
+Kentucky,Carter,2021,35
+Kentucky,Christian,2021,49
+Kentucky,Daviess,2021,48
+Kentucky,Edmonson,2021,36
+Kentucky,Fayette,2021,47
+Kentucky,Greenup,2021,34
+Kentucky,Hancock,2021,38
+Kentucky,Hardin,2021,43
+Kentucky,Jefferson,2021,54
+Kentucky,Jessamine,2021,38
+Kentucky,Livingston,2021,39
+Kentucky,McCracken,2021,44
+Kentucky,Morgan,2021,35
+Kentucky,Oldham,2021,39
+Kentucky,Perry,2021,44
+Kentucky,Pike,2021,41
+Kentucky,Pulaski,2021,45
+Kentucky,Simpson,2021,37
+Kentucky,Trigg,2021,35
+Kentucky,Warren,2021,45
+Kentucky,Washington,2021,36
+Louisiana,Ascension,2021,31
+Louisiana,Bossier,2021,51
+Louisiana,Caddo,2021,37
+Louisiana,Calcasieu,2021,51
+Louisiana,East Baton Rouge,2021,47
+Louisiana,Iberville,2021,39
+Louisiana,Jefferson,2021,40
+Louisiana,Lafayette,2021,42
+Louisiana,Lafourche,2021,45
+Louisiana,Livingston,2021,48
+Louisiana,Orleans,2021,33
+Louisiana,Ouachita,2021,35
+Louisiana,Pointe Coupee,2021,32
+Louisiana,Rapides,2021,38
+Louisiana,St. Bernard,2021,47
+Louisiana,St. James,2021,28
+Louisiana,St. John the Baptist,2021,31
+Louisiana,St. Martin,2021,34
+Louisiana,St. Tammany,2021,37
+Louisiana,Tangipahoa,2021,39
+Louisiana,Terrebonne,2021,34
+Louisiana,West Baton Rouge,2021,46
+Maine,Androscoggin,2021,36
+Maine,Aroostook,2021,35
+Maine,Cumberland,2021,36
+Maine,Hancock,2021,36
+Maine,Kennebec,2021,33
+Maine,Knox,2021,35
+Maine,Oxford,2021,35
+Maine,Penobscot,2021,33
+Maine,Washington,2021,33
+Maine,York,2021,37
+Maryland,Anne Arundel,2021,38
+Maryland,Baltimore,2021,47
+Maryland,Baltimore (City),2021,43
+Maryland,Calvert,2021,39
+Maryland,Carroll,2021,41
+Maryland,Cecil,2021,44
+Maryland,Charles,2021,38
+Maryland,Dorchester,2021,41
+Maryland,Frederick,2021,41
+Maryland,Garrett,2021,39
+Maryland,Harford,2021,46
+Maryland,Howard,2021,36
+Maryland,Kent,2021,40
+Maryland,Montgomery,2021,42
+Maryland,Prince George's,2021,41
+Maryland,Washington,2021,44
+Massachusetts,Barnstable,2021,36
+Massachusetts,Berkshire,2021,44
+Massachusetts,Bristol,2021,39
+Massachusetts,Dukes,2021,36
+Massachusetts,Essex,2021,38
+Massachusetts,Franklin,2021,44
+Massachusetts,Hampden,2021,46
+Massachusetts,Hampshire,2021,35
+Massachusetts,Middlesex,2021,37
+Massachusetts,Norfolk,2021,37
+Massachusetts,Plymouth,2021,39
+Massachusetts,Suffolk,2021,44
+Massachusetts,Worcester,2021,45
+Michigan,Allegan,2021,42
+Michigan,Bay,2021,28
+Michigan,Benzie,2021,36
+Michigan,Berrien,2021,40
+Michigan,Cass,2021,40
+Michigan,Clinton,2021,37
+Michigan,Genesee,2021,41
+Michigan,Huron,2021,37
+Michigan,Ingham,2021,46
+Michigan,Kalamazoo,2021,50
+Michigan,Kent,2021,49
+Michigan,Keweenaw,2021,14
+Michigan,Lenawee,2021,46
+Michigan,Macomb,2021,51
+Michigan,Manistee,2021,38
+Michigan,Mason,2021,38
+Michigan,Missaukee,2021,45
+Michigan,Monroe,2021,19
+Michigan,Muskegon,2021,40
+Michigan,Oakland,2021,39
+Michigan,Ottawa,2021,49
+Michigan,Schoolcraft,2021,37
+Michigan,St. Clair,2021,48
+Michigan,Tuscola,2021,34
+Michigan,Washtenaw,2021,46
+Michigan,Wayne,2021,58
+Michigan,Wexford,2021,34
+Minnesota,Anoka,2021,41
+Minnesota,Becker,2021,52
+Minnesota,Beltrami,2021,29
+Minnesota,Carlton,2021,31
+Minnesota,Cass,2021,54
+Minnesota,Cook,2021,9
+Minnesota,Crow Wing,2021,36
+Minnesota,Dakota,2021,39
+Minnesota,Goodhue,2021,39
+Minnesota,Hennepin,2021,45
+Minnesota,Lake,2021,31
+Minnesota,Lyon,2021,39
+Minnesota,Mille Lacs,2021,36
+Minnesota,Olmsted,2021,39
+Minnesota,Ramsey,2021,39
+Minnesota,Saint Louis,2021,37
+Minnesota,Scott,2021,39
+Minnesota,Stearns,2021,40
+Minnesota,Washington,2021,35
+Minnesota,Winona,2021,24
+Minnesota,Wright,2021,43
+Mississippi,Bolivar,2021,44
+Mississippi,DeSoto,2021,46
+Mississippi,Forrest,2021,51
+Mississippi,Hancock,2021,45
+Mississippi,Harrison,2021,45
+Mississippi,Hinds,2021,52
+Mississippi,Jackson,2021,44
+Mississippi,Lauderdale,2021,31
+Mississippi,Lee,2021,36
+Mississippi,Yalobusha,2021,31
+Missouri,Andrew,2021,39
+Missouri,Boone,2021,37
+Missouri,Buchanan,2021,44
+Missouri,Callaway,2021,39
+Missouri,Cass,2021,42
+Missouri,Cedar,2021,42
+Missouri,Clay,2021,41
+Missouri,Clinton,2021,38
+Missouri,Greene,2021,38
+Missouri,Jackson,2021,53
+Missouri,Jasper,2021,38
+Missouri,Jefferson,2021,44
+Missouri,Lincoln,2021,39
+Missouri,Monroe,2021,32
+Missouri,Perry,2021,39
+Missouri,Saint Charles,2021,41
+Missouri,Saint Louis,2021,42
+Missouri,Sainte Genevieve,2021,39
+Missouri,St. Louis City,2021,55
+Missouri,Stoddard,2021,30
+Missouri,Taney,2021,27
+Montana,Cascade,2021,27
+Montana,Fergus,2021,41
+Montana,Flathead,2021,39
+Montana,Gallatin,2021,41
+Montana,Lake,2021,9
+Montana,Lewis and Clark,2021,44
+Montana,Lincoln,2021,56
+Montana,Missoula,2021,56
+Montana,Phillips,2021,36
+Montana,Powder River,2021,42
+Montana,Powell,2021,12
+Montana,Ravalli,2021,28
+Montana,Richland,2021,38
+Montana,Roosevelt,2021,16
+Montana,Rosebud,2021,38
+Montana,Sanders,2021,42
+Montana,Sheridan,2021,17
+Montana,Silver Bow,2021,33
+Montana,Yellowstone,2021,40
+Nebraska,Cass,2021,19
+Nebraska,Douglas,2021,43
+Nebraska,Gage,2021,55
+Nebraska,Hall,2021,34
+Nebraska,Knox,2021,37
+Nebraska,Lancaster,2021,37
+Nebraska,Sarpy,2021,41
+Nebraska,Scotts Bluff,2021,21
+Nebraska,Thomas,2021,19
+Nebraska,Washington,2021,37
+Nevada,Carson City,2021,42
+Nevada,Churchill,2021,44
+Nevada,Clark,2021,62
+Nevada,Douglas,2021,24
+Nevada,Elko,2021,42
+Nevada,Lyon,2021,41
+Nevada,Nye,2021,23
+Nevada,Washoe,2021,51
+Nevada,White Pine,2021,44
+New Hampshire,Belknap,2021,31
+New Hampshire,Cheshire,2021,40
+New Hampshire,Coos,2021,42
+New Hampshire,Grafton,2021,36
+New Hampshire,Hillsborough,2021,37
+New Hampshire,Merrimack,2021,36
+New Hampshire,Rockingham,2021,40
+New Jersey,Atlantic,2021,37
+New Jersey,Bergen,2021,43
+New Jersey,Camden,2021,49
+New Jersey,Cumberland,2021,39
+New Jersey,Essex,2021,46
+New Jersey,Gloucester,2021,40
+New Jersey,Hudson,2021,44
+New Jersey,Hunterdon,2021,43
+New Jersey,Mercer,2021,48
+New Jersey,Middlesex,2021,44
+New Jersey,Monmouth,2021,36
+New Jersey,Morris,2021,36
+New Jersey,Ocean,2021,42
+New Jersey,Passaic,2021,37
+New Jersey,Union,2021,52
+New Jersey,Warren,2021,42
+New Mexico,Bernalillo,2021,63
+New Mexico,Catron,2021,14
+New Mexico,Chaves,2021,24
+New Mexico,Dona Ana,2021,56
+New Mexico,Eddy,2021,47
+New Mexico,Lea,2021,44
+New Mexico,Lincoln,2021,15
+New Mexico,Los Alamos,2021,14
+New Mexico,Luna,2021,19
+New Mexico,Rio Arriba,2021,44
+New Mexico,San Juan,2021,46
+New Mexico,Sandoval,2021,44
+New Mexico,Santa Fe,2021,44
+New Mexico,Socorro,2021,17
+New Mexico,Taos,2021,28
+New Mexico,Valencia,2021,43
+New York,Albany,2021,39
+New York,Bronx,2021,47
+New York,Chautauqua,2021,38
+New York,Dutchess,2021,34
+New York,Erie,2021,46
+New York,Essex,2021,40
+New York,Hamilton,2021,33
+New York,Jefferson,2021,32
+New York,Kings,2021,42
+New York,Monroe,2021,43
+New York,Nassau,2021,32
+New York,New York,2021,43
+New York,Niagara,2021,34
+New York,Oneida,2021,25
+New York,Onondaga,2021,39
+New York,Orange,2021,37
+New York,Oswego,2021,34
+New York,Putnam,2021,35
+New York,Queens,2021,47
+New York,Richmond,2021,42
+New York,Rockland,2021,37
+New York,Saratoga,2021,31
+New York,Steuben,2021,38
+New York,Suffolk,2021,42
+New York,Tompkins,2021,35
+New York,Wayne,2021,33
+New York,Westchester,2021,38
+North Carolina,Alexander,2021,41
+North Carolina,Avery,2021,40
+North Carolina,Buncombe,2021,41
+North Carolina,Caldwell,2021,40
+North Carolina,Carteret,2021,35
+North Carolina,Caswell,2021,38
+North Carolina,Catawba,2021,46
+North Carolina,Cumberland,2021,44
+North Carolina,Davidson,2021,47
+North Carolina,Durham,2021,44
+North Carolina,Edgecombe,2021,38
+North Carolina,Forsyth,2021,48
+North Carolina,Graham,2021,42
+North Carolina,Granville,2021,38
+North Carolina,Guilford,2021,44
+North Carolina,Haywood,2021,43
+North Carolina,Hyde,2021,22
+North Carolina,Jackson,2021,38
+North Carolina,Johnston,2021,44
+North Carolina,Lenoir,2021,34
+North Carolina,Lincoln,2021,42
+North Carolina,Macon,2021,30
+North Carolina,Martin,2021,32
+North Carolina,Mecklenburg,2021,49
+North Carolina,Mitchell,2021,31
+North Carolina,Montgomery,2021,43
+North Carolina,New Hanover,2021,40
+North Carolina,Northampton,2021,34
+North Carolina,Person,2021,41
+North Carolina,Pitt,2021,39
+North Carolina,Rockingham,2021,43
+North Carolina,Rowan,2021,44
+North Carolina,Swain,2021,40
+North Carolina,Union,2021,42
+North Carolina,Wake,2021,48
+North Carolina,Yancey,2021,44
+North Dakota,Billings,2021,37
+North Dakota,Burke,2021,38
+North Dakota,Burleigh,2021,38
+North Dakota,Cass,2021,42
+North Dakota,Dunn,2021,39
+North Dakota,McKenzie,2021,36
+North Dakota,Mercer,2021,38
+North Dakota,Oliver,2021,41
+North Dakota,Ward,2021,37
+Ohio,Allen,2021,42
+Ohio,Ashtabula,2021,38
+Ohio,Athens,2021,27
+Ohio,Belmont,2021,14
+Ohio,Butler,2021,55
+Ohio,Clark,2021,52
+Ohio,Clermont,2021,42
+Ohio,Clinton,2021,39
+Ohio,Columbiana,2021,16
+Ohio,Cuyahoga,2021,57
+Ohio,Delaware,2021,38
+Ohio,Fayette,2021,36
+Ohio,Franklin,2021,52
+Ohio,Geauga,2021,41
+Ohio,Greene,2021,39
+Ohio,Hamilton,2021,56
+Ohio,Harrison,2021,5
+Ohio,Jefferson,2021,55
+Ohio,Knox,2021,38
+Ohio,Lake,2021,41
+Ohio,Lawrence,2021,46
+Ohio,Licking,2021,38
+Ohio,Lorain,2021,41
+Ohio,Lucas,2021,46
+Ohio,Madison,2021,39
+Ohio,Mahoning,2021,47
+Ohio,Medina,2021,42
+Ohio,Miami,2021,40
+Ohio,Montgomery,2021,53
+Ohio,Noble,2021,37
+Ohio,Portage,2021,40
+Ohio,Preble,2021,47
+Ohio,Scioto,2021,16
+Ohio,Stark,2021,53
+Ohio,Summit,2021,45
+Ohio,Trumbull,2021,45
+Ohio,Warren,2021,44
+Ohio,Washington,2021,39
+Ohio,Wood,2021,39
+Oklahoma,Adair,2021,40
+Oklahoma,Canadian,2021,37
+Oklahoma,Carter,2021,46
+Oklahoma,Cleveland,2021,53
+Oklahoma,Comanche,2021,47
+Oklahoma,Creek,2021,37
+Oklahoma,Dewey,2021,44
+Oklahoma,Grant,2021,30
+Oklahoma,Kay,2021,52
+Oklahoma,Kiowa,2021,43
+Oklahoma,Love,2021,42
+Oklahoma,Mayes,2021,37
+Oklahoma,McClain,2021,40
+Oklahoma,Oklahoma,2021,54
+Oklahoma,Osage,2021,39
+Oklahoma,Ottawa,2021,59
+Oklahoma,Pittsburg,2021,51
+Oklahoma,Sequoyah,2021,41
+Oklahoma,Tulsa,2021,53
+Oklahoma,Washington,2021,51
+Oregon,Baker,2021,29
+Oregon,Benton,2021,22
+Oregon,Clackamas,2021,31
+Oregon,Columbia,2021,29
+Oregon,Crook,2021,28
+Oregon,Deschutes,2021,25
+Oregon,Douglas,2021,29
+Oregon,Grant,2021,51
+Oregon,Harney,2021,48
+Oregon,Jackson,2021,48
+Oregon,Jefferson,2021,28
+Oregon,Josephine,2021,36
+Oregon,Klamath,2021,54
+Oregon,Lake,2021,28
+Oregon,Lane,2021,44
+Oregon,Linn,2021,34
+Oregon,Marion,2021,36
+Oregon,Multnomah,2021,36
+Oregon,Umatilla,2021,38
+Oregon,Union,2021,27
+Oregon,Wallowa,2021,26
+Oregon,Wasco,2021,22
+Oregon,Washington,2021,36
+Pennsylvania,Adams,2021,47
+Pennsylvania,Allegheny,2021,57
+Pennsylvania,Armstrong,2021,48
+Pennsylvania,Beaver,2021,52
+Pennsylvania,Berks,2021,48
+Pennsylvania,Blair,2021,45
+Pennsylvania,Bradford,2021,42
+Pennsylvania,Bucks,2021,37
+Pennsylvania,Cambria,2021,51
+Pennsylvania,Centre,2021,43
+Pennsylvania,Chester,2021,45
+Pennsylvania,Clearfield,2021,33
+Pennsylvania,Cumberland,2021,47
+Pennsylvania,Dauphin,2021,52
+Pennsylvania,Delaware,2021,51
+Pennsylvania,Elk,2021,34
+Pennsylvania,Erie,2021,38
+Pennsylvania,Fayette,2021,43
+Pennsylvania,Franklin,2021,35
+Pennsylvania,Greene,2021,42
+Pennsylvania,Indiana,2021,44
+Pennsylvania,Lackawanna,2021,40
+Pennsylvania,Lancaster,2021,56
+Pennsylvania,Lawrence,2021,31
+Pennsylvania,Lebanon,2021,49
+Pennsylvania,Lehigh,2021,47
+Pennsylvania,Luzerne,2021,34
+Pennsylvania,Lycoming,2021,44
+Pennsylvania,Mercer,2021,40
+Pennsylvania,Monroe,2021,35
+Pennsylvania,Montgomery,2021,47
+Pennsylvania,Northampton,2021,45
+Pennsylvania,Philadelphia,2021,54
+Pennsylvania,Somerset,2021,34
+Pennsylvania,Susquehanna,2021,35
+Pennsylvania,Tioga,2021,38
+Pennsylvania,Washington,2021,49
+Pennsylvania,Westmoreland,2021,47
+Pennsylvania,Wyoming,2021,34
+Pennsylvania,York,2021,51
+Puerto Rico,Adjuntas,2021,14
+Puerto Rico,Bayamon,2021,10
+Puerto Rico,Caguas,2021,14
+Puerto Rico,Catano,2021,50
+Puerto Rico,Fajardo,2021,29
+Puerto Rico,Guayama,2021,28
+Puerto Rico,Guaynabo,2021,33
+Puerto Rico,Mayagnez,2021,38
+Puerto Rico,Ponce,2021,30
+Puerto Rico,San Juan,2021,7
+Rhode Island,Kent,2021,34
+Rhode Island,Providence,2021,45
+Rhode Island,Washington,2021,36
+South Carolina,Aiken,2021,36
+South Carolina,Anderson,2021,38
+South Carolina,Berkeley,2021,34
+South Carolina,Charleston,2021,48
+South Carolina,Chesterfield,2021,41
+South Carolina,Darlington,2021,35
+South Carolina,Edgefield,2021,39
+South Carolina,Florence,2021,39
+South Carolina,Greenville,2021,51
+South Carolina,Horry,2021,38
+South Carolina,Lexington,2021,46
+South Carolina,Richland,2021,42
+South Carolina,Spartanburg,2021,46
+South Carolina,York,2021,44
+South Dakota,Brookings,2021,39
+South Dakota,Brown,2021,26
+South Dakota,Codington,2021,43
+South Dakota,Custer,2021,39
+South Dakota,Hughes,2021,12
+South Dakota,Jackson,2021,35
+South Dakota,Meade,2021,38
+South Dakota,Minnehaha,2021,39
+South Dakota,Pennington,2021,39
+South Dakota,Union,2021,44
+Tennessee,Anderson,2021,38
+Tennessee,Blount,2021,44
+Tennessee,Claiborne,2021,34
+Tennessee,Davidson,2021,52
+Tennessee,DeKalb,2021,35
+Tennessee,Dyer,2021,39
+Tennessee,Hamilton,2021,48
+Tennessee,Jefferson,2021,41
+Tennessee,Knox,2021,52
+Tennessee,Lawrence,2021,34
+Tennessee,Loudon,2021,42
+Tennessee,Madison,2021,38
+Tennessee,Maury,2021,35
+Tennessee,McMinn,2021,37
+Tennessee,Montgomery,2021,33
+Tennessee,Putnam,2021,36
+Tennessee,Roane,2021,37
+Tennessee,Sevier,2021,42
+Tennessee,Shelby,2021,48
+Tennessee,Sullivan,2021,41
+Tennessee,Sumner,2021,44
+Tennessee,Williamson,2021,39
+Tennessee,Wilson,2021,37
+Texas,Atascosa,2021,43
+Texas,Bell,2021,44
+Texas,Bexar,2021,55
+Texas,Bowie,2021,52
+Texas,Brazoria,2021,34
+Texas,Brazos,2021,40
+Texas,Brewster,2021,42
+Texas,Cameron,2021,52
+Texas,Collin,2021,37
+Texas,Culberson,2021,43
+Texas,Dallas,2021,47
+Texas,Denton,2021,45
+Texas,Ector,2021,35
+Texas,El Paso,2021,59
+Texas,Ellis,2021,43
+Texas,Galveston,2021,43
+Texas,Gregg,2021,33
+Texas,Harris,2021,58
+Texas,Harrison,2021,47
+Texas,Hidalgo,2021,52
+Texas,Hood,2021,35
+Texas,Hunt,2021,33
+Texas,Jefferson,2021,44
+Texas,Johnson,2021,37
+Texas,Karnes,2021,6
+Texas,Kaufman,2021,40
+Texas,Kleberg,2021,48
+Texas,Lubbock,2021,31
+Texas,Maverick,2021,37
+Texas,McLennan,2021,39
+Texas,Montgomery,2021,47
+Texas,Navarro,2021,41
+Texas,Nueces,2021,47
+Texas,Orange,2021,41
+Texas,Parker,2021,36
+Texas,Polk,2021,30
+Texas,Potter,2021,31
+Texas,Randall,2021,42
+Texas,Rockwall,2021,31
+Texas,Smith,2021,35
+Texas,Tarrant,2021,52
+Texas,Travis,2021,51
+Texas,Victoria,2021,32
+Texas,Webb,2021,48
+Texas,Wilson,2021,7
+Utah,Box Elder,2021,42
+Utah,Cache,2021,45
+Utah,Carbon,2021,44
+Utah,Davis,2021,47
+Utah,Duchesne,2021,48
+Utah,Garfield,2021,45
+Utah,Iron,2021,40
+Utah,Salt Lake,2021,59
+Utah,San Juan,2021,44
+Utah,Tooele,2021,43
+Utah,Uintah,2021,50
+Utah,Utah,2021,49
+Utah,Washington,2021,45
+Utah,Wayne,2021,11
+Utah,Weber,2021,46
+Vermont,Bennington,2021,37
+Vermont,Chittenden,2021,40
+Vermont,Rutland,2021,40
+Vermont,Windham,2021,11
+Virgin Islands,St Croix,2021,28
+Virgin Islands,St John,2021,22
+Virginia,Albemarle,2021,41
+Virginia,Alexandria City,2021,6
+Virginia,Arlington,2021,38
+Virginia,Bristol City,2021,36
+Virginia,Caroline,2021,35
+Virginia,Carroll,2021,9
+Virginia,Charles,2021,34
+Virginia,Chesterfield,2021,38
+Virginia,Fairfax,2021,47
+Virginia,Fauquier,2021,34
+Virginia,Frederick,2021,44
+Virginia,Giles,2021,38
+Virginia,Hampton City,2021,42
+Virginia,Hanover,2021,38
+Virginia,Henrico,2021,44
+Virginia,Hopewell City,2021,7
+Virginia,Loudoun,2021,37
+Virginia,Lynchburg City,2021,32
+Virginia,Madison,2021,39
+Virginia,Norfolk City,2021,18
+Virginia,Pittsylvania,2021,3
+Virginia,Prince Edward,2021,33
+Virginia,Prince William,2021,35
+Virginia,Richmond City,2021,41
+Virginia,Roanoke,2021,43
+Virginia,Rockbridge,2021,34
+Virginia,Rockingham,2021,36
+Virginia,Salem City,2021,35
+Virginia,Stafford,2021,35
+Virginia,Suffolk City,2021,37
+Virginia,Virginia Beach City,2021,35
+Virginia,Wythe,2021,39
+Washington,Adams,2021,19
+Washington,Asotin,2021,48
+Washington,Benton,2021,36
+Washington,Chelan,2021,31
+Washington,Clallam,2021,37
+Washington,Clark,2021,34
+Washington,Columbia,2021,39
+Washington,Cowlitz,2021,21
+Washington,Franklin,2021,21
+Washington,Garfield,2021,19
+Washington,Grant,2021,25
+Washington,Grays Harbor,2021,26
+Washington,Jefferson,2021,20
+Washington,King,2021,43
+Washington,Kitsap,2021,26
+Washington,Kittitas,2021,28
+Washington,Klickitat,2021,21
+Washington,Lewis,2021,23
+Washington,Mason,2021,22
+Washington,Okanogan,2021,54
+Washington,Pend Oreille,2021,35
+Washington,Pierce,2021,42
+Washington,Skagit,2021,28
+Washington,Snohomish,2021,35
+Washington,Spokane,2021,43
+Washington,Stevens,2021,44
+Washington,Thurston,2021,19
+Washington,Walla Walla,2021,24
+Washington,Whatcom,2021,28
+Washington,Whitman,2021,22
+Washington,Yakima,2021,52
+West Virginia,Berkeley,2021,40
+West Virginia,Brooke,2021,21
+West Virginia,Cabell,2021,38
+West Virginia,Gilmer,2021,31
+West Virginia,Greenbrier,2021,37
+West Virginia,Hancock,2021,38
+West Virginia,Harrison,2021,35
+West Virginia,Kanawha,2021,44
+West Virginia,Marion,2021,40
+West Virginia,Marshall,2021,53
+West Virginia,Monongalia,2021,39
+West Virginia,Ohio,2021,39
+West Virginia,Tucker,2021,34
+West Virginia,Wood,2021,38
+Wisconsin,Ashland,2021,37
+Wisconsin,Brown,2021,43
+Wisconsin,Columbia,2021,40
+Wisconsin,Dane,2021,48
+Wisconsin,Dodge,2021,46
+Wisconsin,Door,2021,39
+Wisconsin,Eau Claire,2021,44
+Wisconsin,Fond du Lac,2021,39
+Wisconsin,Forest,2021,38
+Wisconsin,Grant,2021,46
+Wisconsin,Jackson,2021,31
+Wisconsin,Jefferson,2021,40
+Wisconsin,Kenosha,2021,47
+Wisconsin,Kewaunee,2021,40
+Wisconsin,La Crosse,2021,43
+Wisconsin,Manitowoc,2021,39
+Wisconsin,Marathon,2021,36
+Wisconsin,Milwaukee,2021,52
+Wisconsin,Monroe,2021,32
+Wisconsin,Outagamie,2021,44
+Wisconsin,Ozaukee,2021,43
+Wisconsin,Racine,2021,43
+Wisconsin,Rock,2021,41
+Wisconsin,Sauk,2021,44
+Wisconsin,Sheboygan,2021,41
+Wisconsin,Taylor,2021,39
+Wisconsin,Vilas,2021,34
+Wisconsin,Walworth,2021,41
+Wisconsin,Waukesha,2021,51
+Wyoming,Albany,2021,50
+Wyoming,Big Horn,2021,39
+Wyoming,Campbell,2021,44
+Wyoming,Carbon,2021,10
+Wyoming,Converse,2021,42
+Wyoming,Fremont,2021,46
+Wyoming,Johnson,2021,40
+Wyoming,Laramie,2021,44
+Wyoming,Lincoln,2021,30
+Wyoming,Natrona,2021,42
+Wyoming,Park,2021,14
+Wyoming,Platte,2021,16
+Wyoming,Sheridan,2021,40
+Wyoming,Sublette,2021,46
+Wyoming,Sweetwater,2021,45
+Wyoming,Teton,2021,44
+Wyoming,Uinta,2021,7
+Wyoming,Weston,2021,41

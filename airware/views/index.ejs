@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  </head>
+  <body>
+    <div id="profilePopup">
+      <div class="profile-form">
+        <h2 class="profile-form-title">User Fill Out Form</h2>
+    
+        <form id="userForm">    
+          <!-- state -->
+          <div class="form-row">
+            <label for="eisSelect">State</label>
+            <select id="eisSelect" name="eis">
+              <option value="">Select a state</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+          </div>
+  
+          <!-- Observation Category -->
+          <div class="form-row">
+            <label for="observation">Observation Category</label>
+            <select id="observation" name="observation">
+              <option value="">Select an observation category</option>
+              <option value="Farms">Farms</option>
+              <option value="Airports">Airports</option>
+              <option value="Factories">Factories</option>
+              <option value="Textile Mill">Textile Mill</option>
+              <option value="Power Plants">Power Plants</option>
+              <option value="Space Heating">Space Heating</option>
+              <option value="Furnace">Furnace</option>
+              <option value="Fireplaces">Fireplaces</option>
+              <option value="Non-Diesel Passenger Cars">Non-Diesel Passenger Cars</option>
+              <option value="Restaurants">Restaurants</option>
+              <option value="Crop Burning">Crop Burning</option>
+              <option value="Controlled Forest Fire">Controlled Forest Fire</option>
+              <option value="Semi-Trucks">Semi-Trucks</option>
+              <option value="Diesel Passenger Cars">Diesel Passenger Cars</option>
+              <option value="Hybrid Commercial Vehicles">Hybrid Commercial Vehicles</option>
+              <option value="Landfill">Landfill</option>
+              <option value="Oil Refineries">Oil Refineries</option>
+              <option value="Trains">Trains</option>
+              <option value="Forest Fire">Forest Fire</option>
+              <option value="Coal Mine">Coal Mine</option>
+              <option value="Chemical Plants">Chemical Plants</option>
+              <option value="Petroleum Refinery">Petroleum Refinery</option>
+            </select>
+          </div>
+
+          
+          <!-- Submit button -->
+          <div class="form-row submit-row">
+            <button type="submit" class="submit-btn">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="sidebar">
+      <button href="home" id="Profile">
+        <i class="fa-solid fa-clipboard-list"></i><br>
+        Form</button>
+      <a href="home" id="airQualityBtn">Air Quality Map</a>
+      <a href="home" id="timeLapseBtn">AQI Time Lapse</a>
+      <a href="home" id="airQualityGraphBtn">Air Quality Chart</a>
+    </div>
+    <div class="top-header">
+      <a href="/search" id="topSearchIcon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <h2 class="page-title">AIR AWARE</h2>
+      <p class="subtitle">Please select the type of pollutant you would like to view below</p>
+      <div id="topProfileIcon">
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </div>
+  
+    <div class="navbar">
+      <!-- <n href="#">Profile</n> -->
+      <button href="home" id="Carbon">Carbon Monoxide<br>(CO₂)</button>
+      <button href="home" id="Sulfur">Sulfur Dioxide<br>(SO₂)</button>
+      <button href="home" id="Nitrogen">Nitrogen Oxides<br>(NO₂)</button>
+    </div>
+
+    <div id="map" class="map-container map-hidden"></div>
+
+    <!-- Time Lapse view -->
+    <div id="timeLapseContainer" class="map-container time-hidden">
+      <div class="time-lapse-controls">
+        <label for="yearSlider">Year: <span id="yearLabel">2015</span></label>
+        <input
+          type="range"
+          id="yearSlider"
+          min="2015"
+          max="2025"
+          step="1"
+          value="2015"
+        />
+      </div>
+    
+      <div class="time-lapse-content">
+        <!-- Map for time lapse -->
+        <div id="timeLapseMap"></div>
+      </div>
+    </div>
+
+    <div id="graphContainer" class="graph-container graph-hidden">
+      <canvas id="airQualityChart"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+    <!-- Chart.js for the graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="/javascripts/map.js"></script>
+    <script src="/javascripts/graph.js"></script>
+
+    <script>
+      const airQualityBtn = document.getElementById('airQualityBtn');
+      const mapDiv = document.getElementById('map');
+    
+      const airQualityGraphBtn = document.getElementById('airQualityGraphBtn');
+      const graphContainer = document.getElementById('graphContainer');
+    
+      const timeLapseBtn = document.getElementById('timeLapseBtn');
+      const timeLapseContainer = document.getElementById('timeLapseContainer');
+    
+      const yearSlider = document.getElementById('yearSlider');
+      const yearLabel = document.getElementById('yearLabel');
+      const yearLabelDisplay = document.getElementById('yearLabelDisplay');
+      var currentPollutant = "so2"
+
+      // Global emissions data storage for three pollutants
+      window.emissionsDataCO2 = { emissionsData: [], minMaxData: {}, isLoading: false, error: null };
+      window.emissionsDataSO2 = { emissionsData: [], minMaxData: {}, isLoading: false, error: null };
+      window.emissionsDataNO2 = { emissionsData: [], minMaxData: {}, isLoading: false, error: null };
+      window.emissionsAGI = { agiData: [], error: null };
+
+      // Fetch and store emissions data globally (three pollutant sets)
+      async function loadEmissionsData() {
+        // Avoid double-loading
+        if (window.emissionsDataCO2.isLoading || window.emissionsDataSO2.isLoading || window.emissionsDataNO2.isLoading) return;
+        if (window.emissionsDataCO2.emissionsData.length > 0 || window.emissionsDataSO2.emissionsData.length > 0 || window.emissionsDataNO2.emissionsData.length > 0) return;
+
+        // mark loading
+        window.emissionsDataCO2.isLoading = window.emissionsDataSO2.isLoading = window.emissionsDataNO2.isLoading = true;
+        try {
+          const resp = await fetch('/test_emissions');
+          if (!resp.ok) throw new Error('Failed to fetch emissions data');
+          const payload = await resp.json();
+
+          const data = payload.data || {};
+
+          // Map keys to global variables
+          if (data.co2) {
+            window.emissionsDataCO2.emissionsData = data.co2.emissionsData || [];
+            window.emissionsDataCO2.minMaxData = data.co2.minMaxData || {};
+            window.emissionsDataCO2.error = null;
+          }
+          if (data.so2) {
+            window.emissionsDataSO2.emissionsData = data.so2.emissionsData || [];
+            window.emissionsDataSO2.minMaxData = data.so2.minMaxData || {};
+            window.emissionsDataSO2.error = null;
+          }
+          if (data.no2) {
+            window.emissionsDataNO2.emissionsData = data.no2.emissionsData || [];
+            window.emissionsDataNO2.minMaxData = data.no2.minMaxData || {};
+            window.emissionsDataNO2.error = null;
+          }
+
+          if (payload.agiData) {
+            window.emissionsAGI.agiData = payload.agiData || [];
+            window.emissionsAGI.error = null;
+          }
+
+          console.log('Emissions datasets loaded:', {
+            co2: window.emissionsDataCO2.emissionsData.length,
+            so2: window.emissionsDataSO2.emissionsData.length,
+            no2: window.emissionsDataNO2.emissionsData.length
+          });
+        } catch (err) {
+          window.emissionsDataCO2.error = window.emissionsDataSO2.error = window.emissionsDataNO2.error = err.message;
+          console.error('Error loading emissions data:', err);
+        } finally {
+          window.emissionsDataCO2.isLoading = window.emissionsDataSO2.isLoading = window.emissionsDataNO2.isLoading = false;
+        }
+      }
+
+      // Load emissions data on page ready
+      document.addEventListener('DOMContentLoaded', () => {
+        loadEmissionsData();
+      });
+
+    
+      // Show MAP, hide GRAPH + TIME LAPSE
+      airQualityBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        // show map
+        mapDiv.classList.remove('map-hidden');
+        // hide others
+        graphContainer.classList.add('graph-hidden');
+        if (timeLapseContainer) {
+          timeLapseContainer.classList.add('time-hidden');
+        }
+    
+        // if using initAirQualityMap, call it; otherwise just fix size
+        if (window.initAirQualityMap) {
+          window.initAirQualityMap();
+        } else if (typeof map !== 'undefined' && map) {
+          setTimeout(() => {
+            map.invalidateSize();
+          }, 100);
+        }
+      });
+      
+      // view switching
+      document.addEventListener('DOMContentLoaded', () => {
+          const topProfileIcon = document.getElementById('topProfileIcon');
+          if (topProfileIcon) {
+            topProfileIcon.addEventListener('click', () => {
+              window.location.href = '/profile';
+            });
+          }
+        });
+      // show GRAPH, hide MAP + TIME LAPSE
+      airQualityGraphBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        // show graph
+        graphContainer.classList.remove('graph-hidden');
+        // hide others
+        mapDiv.classList.add('map-hidden');
+        if (timeLapseContainer) {
+          timeLapseContainer.classList.add('time-hidden');
+        }
+    
+        // build the chart the first time we show it
+        if (window.initAirQualityGraph) {
+          window.initAirQualityGraph();
+        }
+      });
+    
+      // show TIME LAPSE, hide MAP + GRAPH
+      if (timeLapseBtn && timeLapseContainer) {
+        timeLapseBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // show time lapse
+          timeLapseContainer.classList.remove('time-hidden');
+          // hide others
+          mapDiv.classList.add('map-hidden');
+          graphContainer.classList.add('graph-hidden');
+
+          // initialize the time-lapse map
+          if (window.initTimeLapseMap) {
+            window.initTimeLapseMap(yearSlider ? yearSlider.value : undefined);
+            // recolor time-lapse layer for current year immediately after making it visible
+            const curYear = yearSlider ? yearSlider.value : (yearLabel ? yearLabel.textContent : undefined);
+            if (typeof recolorTimelapseMap === 'function') recolorTimelapseMap(curYear);
+          }
+        });
+      }
+    
+      // year slider 
+      if (yearSlider && yearLabel) {
+        yearSlider.addEventListener('input', (e) => {
+          const val = e.target.value;
+          yearLabel.textContent = val;
+          if (yearLabelDisplay) {
+            yearLabelDisplay.textContent = val;
+          }
+          // Recolor the timelapse map for the selected year
+          if (typeof recolorTimelapseMap === 'function') recolorTimelapseMap(val);
+        });
+      }
+      document.getElementById('Carbon').addEventListener('click', function() {
+        console.log('Carbon Dioxide button clicked');
+        currentPollutant = "co2";
+        // Fetch server-side metrics for this pollutant and update UI
+        fetchStateMetrics(2024, 'Carbon Dioxide').then(() => {
+          if (statesLayer) {
+            statesLayer.eachLayer(layer => {
+              const name = layer.feature.properties.name;
+              layer.unbindTooltip();
+              layer.bindTooltip(buildTooltipHtml(name), { sticky: true });
+            });
+            recolorMap(currentPollutant);
+          }
+          // if (timeStatesLayer) {
+          //   recolorTimelapseMap(currentPollutant, "2015");
+          // }
+          if (window.setGraphPollutant) window.setGraphPollutant('co2');
+        }).catch(err => { console.warn('Failed to load CO2 metrics', err); });
+      });
+
+      document.getElementById('Sulfur').addEventListener('click', function() {
+        console.log('Sulfur Dioxide button clicked');
+        currentPollutant = "so2";
+        fetchStateMetrics(2024, 'Sulfur Dioxide').then(() => {
+          if (statesLayer) {
+            statesLayer.eachLayer(layer => {
+              const name = layer.feature.properties.name;
+              layer.unbindTooltip();
+              layer.bindTooltip(buildTooltipHtml(name), { sticky: true });
+            });
+            recolorMap(currentPollutant);
+          }
+          // if (timeStatesLayer) {
+          //   recolorTimelapseMap(currentPollutant, "2015");
+          // }
+          if (window.setGraphPollutant) window.setGraphPollutant('so2');
+        }).catch(err => { console.warn('Failed to load SO2 metrics', err); });
+      });
+
+      document.getElementById('Nitrogen').addEventListener('click', function() {
+        console.log('Nitrogen Dioxide button clicked');
+        currentPollutant = "no2";
+        fetchStateMetrics(2024, 'Nitrogen Oxides').then(() => {
+          if (statesLayer) {
+            statesLayer.eachLayer(layer => {
+              const name = layer.feature.properties.name;
+              layer.unbindTooltip();
+              layer.bindTooltip(buildTooltipHtml(name), { sticky: true });
+            });
+            recolorMap(currentPollutant);
+          }
+          // if (timeStatesLayer) {
+          //   recolorTimelapseMap(currentPollutant, "2015");
+          // }
+          if (window.setGraphPollutant) window.setGraphPollutant('no2');
+        }).catch(err => { console.warn('Failed to load NOx metrics', err); });
+      });
+
+      // Function to recolor a state
+      // function recolorState(stateName, color) {
+      //   if (!statesLayer) return;
+
+      //   statesLayer.eachLayer(layer => {
+      //     if (layer.feature.properties.name === stateName) {
+      //       console.log("Found state", stateName);
+      //       layer.setStyle({
+      //         fillColor: color,
+      //         fillOpacity: 1,
+      //         color: '#555',
+      //         weight: 2
+      //       });
+      //     }
+      //   });
+      // }
+      // interpolate color
+      function lerpColor(color1, color2, t) {
+        return color1.map((c1, i) => Math.round(c1 + (color2[i] - c1) * t));
+      }
+      // Function to recolor a map
+      function recolorMap(pollutant) {
+        // Keep track of colors to interpolate between
+        const red = [255, 0, 0];
+        const orange = [255, 128, 0];
+        const yellow = [255, 255, 0];
+        const green = [0, 255, 0];
+        const colors = [green, yellow, orange, red]
+        // pick dataset based on pollutant
+        let dataset;
+        if (pollutant === 'co2') {
+          dataset = window.emissionsDataCO2;
+        } else if (pollutant === 'so2') {
+          dataset = window.emissionsDataSO2;
+        } else if (pollutant === 'no2') {
+          dataset = window.emissionsDataNO2;
+        } else {
+          console.error('Unknown pollutant for recolorMap:', pollutant);
+          return;
+        }
+
+        // Get min/max for selected pollutant
+        const max_emissions = (dataset && dataset.minMaxData && dataset.minMaxData.max_avg) ? dataset.minMaxData.max_avg : 0;
+        const min_emissions = (dataset && dataset.minMaxData && dataset.minMaxData.min_avg) ? dataset.minMaxData.min_avg : 0;
+        // const average_emissions = [1, 2, 3];
+        // Loop through each state and change the color accordingly
+        statesLayer.eachLayer(layer => {
+          const state_name = layer.feature.properties.name;
+          let avg_state_emission = min_emissions;
+          const list = (dataset && dataset.emissionsData) ? dataset.emissionsData : [];
+          for (let i = 0; i < list.length; i++) {
+            const record = list[i];
+            if (record.state === state_name) {
+              avg_state_emission = record.avg_carbon_em;
+              break;
+            }
+          }
+          // Get t from 0 to 3
+          let t = (avg_state_emission - min_emissions) / (max_emissions - min_emissions + 1);
+          t = Math.min(Math.max(t, 0), 1);
+          t = t * 3;
+          if (t == 3) {
+            t = t - 0.01;
+          }
+          let color_index = Math.floor(t);
+          let t_color = t - color_index;
+          // finally interpolate color and set it for the state
+          let color_rgb = lerpColor(colors[color_index], colors[color_index + 1], t_color);
+          let color = `rgb(${color_rgb[0]}, ${color_rgb[1]}, ${color_rgb[2]})`;
+          layer.setStyle({
+            fillColor: color,
+            fillOpacity: 1,
+            color: '#555',
+            weight: 2
+          });
+        });
+      }
+      // function to recolor the timelapse map when the slider is changed
+      var it = 0;
+      async function recolorTimelapseMap(year) {
+        // year may be a string; normalize
+        if (!year) return;
+        const yStr = String(year);
+
+        // fetch per-year JSON from server (no global preload)
+        let payload = null;
+        try {
+          const resp = await fetch(`/state_averages?format=json&year=${encodeURIComponent(yStr)}`);
+          if (resp.ok) payload = await resp.json();
+        } catch (err) {
+          console.warn('Failed to fetch per-year averages for', yStr, err);
+        }
+        const data = (payload && payload.data) ? payload.data : {};
+        const statesList = (payload && payload.states) ? payload.states : Object.keys(data);
+        // build lowercase lookup for matching geojson names
+        const lower = {};
+        for (const k of statesList) lower[String(k).trim().toLowerCase()] = k;
+        // keep track of colors to interpolate between
+        const red = [255, 0, 0];
+        const orange = [255, 128, 0];
+        const yellow = [255, 255, 0];
+        const green = [0, 255, 0];
+        const colors = [green, yellow, orange, red];
+
+        if (!timeStatesLayer) return;
+
+        // collect numeric values
+        const values = [];
+        for (const st of statesList) {
+          const v = data[st] && (yStr in data[st]) ? Number(data[st][yStr]) : null;
+          if (v != null && !isNaN(v)) values.push(v);
+        }
+
+        let min_val = values.length ? Math.min(...values) : 0;
+        let max_val = values.length ? Math.max(...values) : 0;
+        // avoid division by zero
+        const range = (max_val - min_val) || 1;
+
+        timeStatesLayer.eachLayer(layer => {
+          const state_name = layer.feature.properties.name;
+          // try exact match, then lowercase-normalized key
+          // determine raw value (null if missing) and display value
+          let vRaw = null;
+          if (data[state_name] && (yStr in data[state_name])) {
+            vRaw = Number(data[state_name][yStr]);
+          } else {
+            const lk = String(state_name).trim().toLowerCase();
+            const canon = lower[lk];
+            if (canon && data[canon] && (yStr in data[canon])) {
+              vRaw = Number(data[canon][yStr]);
+            }
+          }
+          // For coloring fallback to minimum value if missing, but keep raw null for tooltip
+          let v = (vRaw == null || isNaN(vRaw)) ? min_val : vRaw;
+
+          // Normalize t between 0..1
+          let t = (v - min_val) / range;
+          t = Math.min(Math.max(t, 0), 1);
+          // map to 0..3 color segments
+          t = t * 3;
+          if (t === 3) t = t - 0.01;
+          let color_index = Math.floor(t);
+          let t_color = t - color_index;
+          const color_rgb = lerpColor(colors[color_index], colors[color_index + 1], t_color);
+          const color = `rgb(${color_rgb[0]}, ${color_rgb[1]}, ${color_rgb[2]})`;
+          layer.setStyle({
+            fillColor: color,
+            fillOpacity: 1,
+            color: '#555',
+            weight: 2
+          });
+          // Update tooltip for this layer to show the per-year median AQI (or a no-data message)
+          let tooltipHtml;
+          if (vRaw == null || isNaN(vRaw)) {
+            tooltipHtml = `<strong>${state_name}</strong><br><em>No ${yStr} data available</em>`;
+          } else {
+            tooltipHtml = `<strong>${state_name}</strong><br>Median AQI (${yStr}): <strong>${vRaw}</strong>`;
+          }
+          layer.unbindTooltip();
+          layer.bindTooltip(tooltipHtml, { sticky: true });
+        });
+      }
+      // Button to make popup form appear
+      const popup = document.getElementById('profilePopup');
+      popup.style.display = 'none';
+      const profileElement = document.getElementById('Profile');
+      profileElement.addEventListener('click', function() {
+        // Position popup near the clicked element
+        const rect = profileElement.getBoundingClientRect();
+
+        // Toggle popup visibility
+        if (popup.style.display === 'none') {
+          popup.style.display = 'block';
+        } else {
+          popup.style.display = 'none';
+        }
+      });
+      
+      const observationToSector = {
+        "Farms": "Fuel Comb - Comm/Institutional - Biomass",
+        "Airports": "Fuel Comb - Comm/Institutional - Natural Gas",
+        "Factories": "Fuel Comb - Comm/Institutional - Oil",
+        "Textile Mill": "Fuel Comb - Industrial Boilers, ICEs - Biomass",
+        "Power Plants": "Fuel Comb - Industrial Boilers, ICEs - Natural Gas",
+        "Space Heating": "Fuel Comb - Industrial Boilers, ICEs - Oil",
+        "Furnace": "Fuel Comb - Residential - Natural Gas",
+        "Fireplaces": "Fuel Comb - Residential - Wood",
+        "Non-Diesel Passenger Cars": "Mobile - On-Road non-Diesel Light Duty Vehicles",
+        "Restaurants": "Commercial Cooking",
+        "Crop Burning": "Fires - Agricultural Field Burning",
+        "Controlled Forest Fire": "Fires - Prescribed Fires",
+        "Semi-Trucks": "Mobile - On-Road Diesel Heavy Duty Vehicles",
+        "Diesel Passenger Cars": "Mobile - On-Road Diesel Light Duty Vehicles",
+        "Hybrid Commercial Vehicles": "Mobile - On-Road non-Diesel Heavy Duty Vehicles",
+        "Landfill": "Waste Disposal",
+        "Oil Refineries": "Industrial Processes - Oil & Gas Production",
+        "Trains": "Mobile - Locomotives",
+        "Forest Fire": "Fires - Wildfires",
+        "Coal Mine": "Fuel Comb - Comm/Institutional - Coal",
+        "Chemical Plants": "Fuel Comb - Industrial Boilers, ICEs - Coal",
+        "Petroleum Refinery": "Industrial Processes - Petroleum Refineries"
+      };
+
+      // Submit form handler: send state and observation_category to server
+      const userForm = document.getElementById('userForm');
+      if (userForm) {
+        userForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const state = document.getElementById('eisSelect').value;
+          // const observation_category = document.getElementById('observation').value;
+
+          try {
+            // send eis_sector too (use state as eis_sector to avoid primary-key collisions)
+            const observation_category = document.getElementById('observation').value;
+            const eis_sector = observationToSector[observation_category];
+            const resp = await fetch('/observations', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ state, eis_sector, observation_category })
+              });
+            const data = await resp.json();
+            if (resp.ok) {
+              alert('Observation saved');
+              userForm.reset();
+              popup.style.display = 'none';
+            } else if (data && data.message) {
+              alert('Error: ' + data.message);
+            } else {
+              alert('Unknown error');
+            }
+          } catch (err) {
+            console.error('Submit error', err);
+            alert('Network error');
+          }
+        });
+      }
+    </script>
+    <script>
+      // Load per-state per-year averages and expose globally for other scripts
+      async function loadStateAveragesGlobal() {
+        try {
+          const resp = await fetch('/state_averages?format=json');
+          if (!resp.ok) throw new Error('Failed to fetch state averages');
+          const payload = await resp.json();
+          if (!payload || !payload.success) {
+            console.warn('state_averages returned no data');
+            window.stateAverages = null;
+            return;
+          }
+          // payload contains: years, states, data (slim)
+          window.stateAverages = payload.data || {};
+          window.stateAveragesYears = payload.years || [];
+          window.stateAveragesStates = payload.states || Object.keys(window.stateAverages);
+          // build lowercase lookup for robust matching with GeoJSON state names
+          window.stateAveragesLower = {};
+          for (const k of window.stateAveragesStates) {
+            window.stateAveragesLower[String(k).trim().toLowerCase()] = k;
+          }
+          console.log('stateAverages loaded:', window.stateAveragesYears.length, 'years,', window.stateAveragesStates.length, 'states');
+        } catch (err) {
+          console.error('Error loading state averages:', err);
+          window.stateAverages = null;
+          window.stateAveragesYears = [];
+          window.stateAveragesStates = [];
+        }
+      }
+
+      // Note: we no longer preload state averages globally. recolorTimelapseMap(year)
+      // will fetch per-year JSON on demand. Keep loader available if needed.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1004 @@
+State,County,Year,Median_AQI
+Alabama,Baldwin,2022,39
+Alabama,Clay,2022,34
+Alabama,DeKalb,2022,38
+Alabama,Elmore,2022,33
+Alabama,Etowah,2022,46
+Alabama,Jefferson,2022,54
+Alabama,Lawrence,2022,29
+Alabama,Madison,2022,48
+Alabama,Mobile,2022,44
+Alabama,Montgomery,2022,41
+Alabama,Morgan,2022,47
+Alabama,Russell,2022,46
+Alabama,Shelby,2022,37
+Alabama,Sumter,2022,38
+Alabama,Tuscaloosa,2022,37
+Alaska,Aleutians East ,2022,12
+Alaska,Anchorage ,2022,24
+Alaska,Denali ,2022,34
+Alaska,Fairbanks North Star ,2022,43
+Alaska,Juneau ,2022,21
+Alaska,Kenai Peninsula ,2022,9
+Alaska,Matanuska-Susitna ,2022,12
+Alaska,North Slope ,2022,7
+Arizona,Apache,2022,11
+Arizona,Cochise,2022,44
+Arizona,Coconino,2022,44
+Arizona,Gila,2022,45
+Arizona,La Paz,2022,44
+Arizona,Maricopa,2022,75
+Arizona,Mohave,2022,17
+Arizona,Navajo,2022,44
+Arizona,Pima,2022,53
+Arizona,Pinal,2022,61
+Arizona,Santa Cruz,2022,43
+Arizona,Yavapai,2022,40
+Arizona,Yuma,2022,46
+Arkansas,Arkansas,2022,41
+Arkansas,Ashley,2022,39
+Arkansas,Clark,2022,35
+Arkansas,Crittenden,2022,46
+Arkansas,Garland,2022,44
+Arkansas,Jackson,2022,41
+Arkansas,Newton,2022,37
+Arkansas,Polk,2022,34
+Arkansas,Pulaski,2022,52
+Arkansas,Union,2022,47
+Arkansas,Washington,2022,47
+California,Alameda,2022,49
+California,Amador,2022,36
+California,Butte,2022,50
+California,Calaveras,2022,41
+California,Colusa,2022,44
+California,Contra Costa,2022,51
+California,Del Norte,2022,29
+California,El Dorado,2022,43
+California,Fresno,2022,71
+California,Glenn,2022,42
+California,Humboldt,2022,24
+California,Imperial,2022,61
+California,Inyo,2022,58
+California,Kern,2022,80
+California,Kings,2022,69
+California,Lake,2022,32
+California,Los Angeles,2022,74
+California,Madera,2022,54
+California,Marin,2022,37
+California,Mariposa,2022,48
+California,Mendocino,2022,54
+California,Merced,2022,56
+California,Mono,2022,27
+California,Monterey,2022,39
+California,Nevada,2022,50
+California,Orange,2022,53
+California,Placer,2022,54
+California,Plumas,2022,55
+California,Riverside,2022,77
+California,Sacramento,2022,53
+California,San Benito,2022,42
+California,San Bernardino,2022,77
+California,San Diego,2022,63
+California,San Francisco,2022,36
+California,San Joaquin,2022,48
+California,San Luis Obispo,2022,55
+California,San Mateo,2022,36
+California,Santa Barbara,2022,48
+California,Santa Clara,2022,49
+California,Santa Cruz,2022,35
+California,Shasta,2022,45
+California,Siskiyou,2022,41
+California,Solano,2022,43
+California,Sonoma,2022,36
+California,Stanislaus,2022,57
+California,Sutter,2022,52
+California,Tehama,2022,44
+California,Trinity,2022,34
+California,Tulare,2022,77
+California,Tuolumne,2022,39
+California,Ventura,2022,52
+California,Yolo,2022,42
+Colorado,Adams,2022,51
+Colorado,Alamosa,2022,11
+Colorado,Arapahoe,2022,46
+Colorado,Archuleta,2022,42
+Colorado,Boulder,2022,47
+Colorado,Chaffee,2022,49
+Colorado,Clear Creek,2022,47
+Colorado,Delta,2022,44
+Colorado,Denver,2022,52
+Colorado,Douglas,2022,46
+Colorado,El Paso,2022,46
+Colorado,Fremont,2022,12
+Colorado,Garfield,2022,49
+Colorado,Gilpin,2022,45
+Colorado,Grand,2022,44
+Colorado,Gunnison,2022,46
+Colorado,Jackson,2022,40
+Colorado,Jefferson,2022,47
+Colorado,La Plata,2022,46
+Colorado,Larimer,2022,51
+Colorado,Mesa,2022,44
+Colorado,Montezuma,2022,44
+Colorado,Park,2022,48
+Colorado,Pitkin,2022,14
+Colorado,Prowers,2022,18
+Colorado,Pueblo,2022,21
+Colorado,Rio Blanco,2022,47
+Colorado,Routt,2022,13
+Colorado,San Juan,2022,10
+Colorado,San Miguel,2022,45
+Colorado,Weld,2022,51
+Connecticut,Fairfield,2022,45
+Connecticut,Hartford,2022,42
+Connecticut,Litchfield,2022,40
+Connecticut,Middlesex,2022,40
+Connecticut,New Haven,2022,44
+Connecticut,New London,2022,39
+Connecticut,Tolland,2022,39
+Connecticut,Windham,2022,35
+Country Of Mexico,BAJA CALIFORNIA NORTE,2022,66
+Country Of Mexico,SONORA,2022,51
+Delaware,Kent,2022,42
+Delaware,New Castle,2022,48
+Delaware,Sussex,2022,43
+District Of Columbia,District of Columbia,2022,49
+Florida,Alachua,2022,41
+Florida,Baker,2022,43
+Florida,Bay,2022,46
+Florida,Brevard,2022,43
+Florida,Broward,2022,49
+Florida,Citrus,2022,45
+Florida,Collier,2022,40
+Florida,Columbia,2022,45
+Florida,Duval,2022,53
+Florida,Escambia,2022,49
+Florida,Flagler,2022,34
+Florida,Hamilton,2022,47
+Florida,Highlands,2022,33
+Florida,Hillsborough,2022,51
+Florida,Holmes,2022,47
+Florida,Indian River,2022,33
+Florida,Lake,2022,35
+Florida,Lee,2022,42
+Florida,Leon,2022,47
+Florida,Liberty,2022,32
+Florida,Manatee,2022,33
+Florida,Marion,2022,44
+Florida,Martin,2022,42
+Florida,Miami-Dade,2022,44
+Florida,Okaloosa,2022,39
+Florida,Orange,2022,39
+Florida,Osceola,2022,34
+Florida,Palm Beach,2022,41
+Florida,Pasco,2022,37
+Florida,Pinellas,2022,46
+Florida,Polk,2022,44
+Florida,Putnam,2022,16
+Florida,Santa Rosa,2022,44
+Florida,Sarasota,2022,45
+Florida,Seminole,2022,42
+Florida,St. Lucie,2022,33
+Florida,Volusia,2022,45
+Florida,Wakulla,2022,41
+Georgia,Bibb,2022,46
+Georgia,Charlton,2022,26
+Georgia,Chatham,2022,46
+Georgia,Chattooga,2022,35
+Georgia,Clarke,2022,47
+Georgia,Clayton,2022,42
+Georgia,Cobb,2022,40
+Georgia,Coffee,2022,36
+Georgia,Columbia,2022,34
+Georgia,Dawson,2022,35
+Georgia,DeKalb,2022,51
+Georgia,Dougherty,2022,50
+Georgia,Douglas,2022,38
+Georgia,Floyd,2022,37
+Georgia,Fulton,2022,52
+Georgia,Glynn,2022,45
+Georgia,Gwinnett,2022,44
+Georgia,Hall,2022,46
+Georgia,Henry,2022,40
+Georgia,Houston,2022,45
+Georgia,Lowndes,2022,48
+Georgia,Murray,2022,38
+Georgia,Muscogee,2022,45
+Georgia,Pike,2022,35
+Georgia,Richmond,2022,49
+Georgia,Rockdale,2022,39
+Georgia,Sumter,2022,35
+Georgia,Walker,2022,53
+Georgia,Washington,2022,52
+Hawaii,Hawaii,2022,33
+Hawaii,Honolulu,2022,29
+Hawaii,Kauai,2022,13
+Hawaii,Maui,2022,21
+Idaho,Ada,2022,48
+Idaho,Bannock,2022,40
+Idaho,Benewah,2022,49
+Idaho,Blaine,2022,23
+Idaho,Boise,2022,39
+Idaho,Bonner,2022,35
+Idaho,Bonneville,2022,27
+Idaho,Butte,2022,42
+Idaho,Canyon,2022,49
+Idaho,Custer,2022,7
+Idaho,Franklin,2022,23
+Idaho,Idaho,2022,41
+Idaho,Kootenai,2022,29
+Idaho,Latah,2022,13
+Idaho,Lemhi,2022,44
+Idaho,Nez Perce,2022,34
+Idaho,Shoshone,2022,42
+Idaho,Twin Falls,2022,31
+Idaho,Valley,2022,37
+Illinois,Adams,2022,39
+Illinois,Champaign,2022,44
+Illinois,Clark,2022,34
+Illinois,Cook,2022,54
+Illinois,DuPage,2022,47
+Illinois,Effingham,2022,38
+Illinois,Hamilton,2022,45
+Illinois,Jersey,2022,45
+Illinois,Jo Daviess,2022,34
+Illinois,Kane,2022,42
+Illinois,Lake,2022,39
+Illinois,Macon,2022,46
+Illinois,Macoupin,2022,33
+Illinois,Madison,2022,54
+Illinois,McHenry,2022,47
+Illinois,McLean,2022,47
+Illinois,Peoria,2022,48
+Illinois,Randolph,2022,45
+Illinois,Rock Island,2022,47
+Illinois,Saint Clair,2022,52
+Illinois,Sangamon,2022,45
+Illinois,Will,2022,49
+Illinois,Winnebago,2022,43
+Indiana,Allen,2022,35
+Indiana,Bartholomew,2022,41
+Indiana,Boone,2022,36
+Indiana,Brown,2022,35
+Indiana,Carroll,2022,34
+Indiana,Clark,2022,51
+Indiana,Delaware,2022,38
+Indiana,Dubois,2022,42
+Indiana,Elkhart,2022,43
+Indiana,Floyd,2022,33
+Indiana,Greene,2022,38
+Indiana,Hamilton,2022,43
+Indiana,Hendricks,2022,34
+Indiana,Henry,2022,34
+Indiana,Howard,2022,44
+Indiana,Knox,2022,36
+Indiana,LaPorte,2022,36
+Indiana,Lake,2022,52
+Indiana,Madison,2022,45
+Indiana,Marion,2022,56
+Indiana,Monroe,2022,38
+Indiana,Perry,2022,36
+Indiana,Porter,2022,46
+Indiana,Posey,2022,33
+Indiana,Shelby,2022,36
+Indiana,Spencer,2022,42
+Indiana,St. Joseph,2022,52
+Indiana,Tippecanoe,2022,36
+Indiana,Vanderburgh,2022,51
+Indiana,Vigo,2022,47
+Indiana,Wabash,2022,37
+Indiana,Warrick,2022,37
+Indiana,Whitley,2022,44
+Iowa,Black Hawk,2022,44
+Iowa,Bremer,2022,37
+Iowa,Cerro Gordo,2022,17
+Iowa,Clinton,2022,52
+Iowa,Harrison,2022,40
+Iowa,Johnson,2022,44
+Iowa,Lee,2022,41
+Iowa,Linn,2022,48
+Iowa,Montgomery,2022,39
+Iowa,Muscatine,2022,42
+Iowa,Palo Alto,2022,42
+Iowa,Polk,2022,41
+Iowa,Pottawattamie,2022,37
+Iowa,Scott,2022,49
+Iowa,Van Buren,2022,43
+Iowa,Woodbury,2022,36
+Kansas,Chase,2022,25
+Kansas,Ford,2022,19
+Kansas,Johnson,2022,44
+Kansas,Leavenworth,2022,37
+Kansas,Neosho,2022,48
+Kansas,Sedgwick,2022,50
+Kansas,Shawnee,2022,44
+Kansas,Sherman,2022,18
+Kansas,Sumner,2022,48
+Kansas,Trego,2022,42
+Kansas,Wyandotte,2022,51
+Kentucky,Bell,2022,48
+Kentucky,Boone,2022,41
+Kentucky,Boyd,2022,43
+Kentucky,Bullitt,2022,40
+Kentucky,Campbell,2022,43
+Kentucky,Carter,2022,39
+Kentucky,Christian,2022,48
+Kentucky,Daviess,2022,46
+Kentucky,Edmonson,2022,37
+Kentucky,Fayette,2022,44
+Kentucky,Greenup,2022,36
+Kentucky,Hancock,2022,40
+Kentucky,Hardin,2022,44
+Kentucky,Jefferson,2022,53
+Kentucky,Jessamine,2022,40
+Kentucky,Livingston,2022,41
+Kentucky,McCracken,2022,45
+Kentucky,Morgan,2022,35
+Kentucky,Oldham,2022,41
+Kentucky,Perry,2022,46
+Kentucky,Pike,2022,39
+Kentucky,Pulaski,2022,42
+Kentucky,Simpson,2022,39
+Kentucky,Trigg,2022,39
+Kentucky,Warren,2022,43
+Kentucky,Washington,2022,37
+Louisiana,Ascension,2022,32
+Louisiana,Bossier,2022,52
+Louisiana,Caddo,2022,40
+Louisiana,Calcasieu,2022,52
+Louisiana,East Baton Rouge,2022,48
+Louisiana,Iberville,2022,42
+Louisiana,Jefferson,2022,46
+Louisiana,Lafayette,2022,47
+Louisiana,Lafourche,2022,43
+Louisiana,Livingston,2022,51
+Louisiana,Orleans,2022,35
+Louisiana,Ouachita,2022,38
+Louisiana,Pointe Coupee,2022,34
+Louisiana,Rapides,2022,38
+Louisiana,St. Bernard,2022,47
+Louisiana,St. James,2022,32
+Louisiana,St. John the Baptist,2022,33
+Louisiana,St. Martin,2022,34
+Louisiana,St. Tammany,2022,41
+Louisiana,Tangipahoa,2022,38
+Louisiana,Terrebonne,2022,38
+Louisiana,West Baton Rouge,2022,46
+Maine,Androscoggin,2022,32
+Maine,Aroostook,2022,34
+Maine,Cumberland,2022,36
+Maine,Hancock,2022,36
+Maine,Kennebec,2022,30
+Maine,Knox,2022,35
+Maine,Oxford,2022,33
+Maine,Penobscot,2022,33
+Maine,Sagadahoc,2022,32
+Maine,Washington,2022,34
+Maine,York,2022,38
+Maryland,Anne Arundel,2022,38
+Maryland,Baltimore,2022,45
+Maryland,Baltimore (City),2022,44
+Maryland,Calvert,2022,39
+Maryland,Carroll,2022,42
+Maryland,Cecil,2022,43
+Maryland,Charles,2022,41
+Maryland,Dorchester,2022,43
+Maryland,Frederick,2022,41
+Maryland,Garrett,2022,38
+Maryland,Harford,2022,43
+Maryland,Howard,2022,37
+Maryland,Kent,2022,40
+Maryland,Montgomery,2022,43
+Maryland,Prince George's,2022,39
+Maryland,Washington,2022,40
+Massachusetts,Barnstable,2022,36
+Massachusetts,Berkshire,2022,42
+Massachusetts,Bristol,2022,38
+Massachusetts,Dukes,2022,37
+Massachusetts,Essex,2022,41
+Massachusetts,Franklin,2022,40
+Massachusetts,Hampden,2022,42
+Massachusetts,Hampshire,2022,42
+Massachusetts,Middlesex,2022,38
+Massachusetts,Norfolk,2022,40
+Massachusetts,Plymouth,2022,45
+Massachusetts,Suffolk,2022,41
+Massachusetts,Worcester,2022,45
+Michigan,Allegan,2022,40
+Michigan,Bay,2022,32
+Michigan,Benzie,2022,36
+Michigan,Berrien,2022,39
+Michigan,Cass,2022,38
+Michigan,Clinton,2022,38
+Michigan,Genesee,2022,44
+Michigan,Huron,2022,35
+Michigan,Ingham,2022,43
+Michigan,Kalamazoo,2022,50
+Michigan,Kent,2022,47
+Michigan,Keweenaw,2022,12
+Michigan,Lenawee,2022,43
+Michigan,Macomb,2022,44
+Michigan,Manistee,2022,35
+Michigan,Mason,2022,36
+Michigan,Missaukee,2022,46
+Michigan,Monroe,2022,26
+Michigan,Muskegon,2022,37
+Michigan,Oakland,2022,39
+Michigan,Ottawa,2022,46
+Michigan,Schoolcraft,2022,35
+Michigan,St. Clair,2022,43
+Michigan,Tuscola,2022,34
+Michigan,Washtenaw,2022,46
+Michigan,Wayne,2022,58
+Michigan,Wexford,2022,35
+Minnesota,Anoka,2022,40
+Minnesota,Becker,2022,36
+Minnesota,Beltrami,2022,23
+Minnesota,Carlton,2022,25
+Minnesota,Cass,2022,32
+Minnesota,Cook,2022,4
+Minnesota,Crow Wing,2022,37
+Minnesota,Dakota,2022,34
+Minnesota,Goodhue,2022,38
+Minnesota,Hennepin,2022,42
+Minnesota,Lake,2022,31
+Minnesota,Lyon,2022,38
+Minnesota,Mille Lacs,2022,35
+Minnesota,Olmsted,2022,41
+Minnesota,Ramsey,2022,36
+Minnesota,Saint Louis,2022,36
+Minnesota,Scott,2022,42
+Minnesota,Stearns,2022,39
+Minnesota,Washington,2022,36
+Minnesota,Winona,2022,22
+Minnesota,Wright,2022,41
+Mississippi,Bolivar,2022,44
+Mississippi,DeSoto,2022,48
+Mississippi,Forrest,2022,51
+Mississippi,Hancock,2022,44
+Mississippi,Harrison,2022,46
+Mississippi,Hinds,2022,52
+Mississippi,Jackson,2022,44
+Mississippi,Lauderdale,2022,36
+Mississippi,Lee,2022,40
+Mississippi,Yalobusha,2022,34
+Missouri,Andrew,2022,43
+Missouri,Boone,2022,38
+Missouri,Buchanan,2022,42
+Missouri,Callaway,2022,40
+Missouri,Cass,2022,40
+Missouri,Cedar,2022,41
+Missouri,Clay,2022,41
+Missouri,Clinton,2022,41
+Missouri,Greene,2022,49
+Missouri,Jackson,2022,52
+Missouri,Jasper,2022,41
+Missouri,Jefferson,2022,44
+Missouri,Lincoln,2022,41
+Missouri,Monroe,2022,34
+Missouri,Perry,2022,42
+Missouri,Saint Charles,2022,42
+Missouri,Saint Louis,2022,44
+Missouri,Sainte Genevieve,2022,41
+Missouri,St. Louis City,2022,55
+Missouri,Stoddard,2022,31
+Missouri,Taney,2022,25
+Montana,Cascade,2022,23
+Montana,Custer,2022,40
+Montana,Fergus,2022,40
+Montana,Flathead,2022,41
+Montana,Gallatin,2022,32
+Montana,Lake,2022,11
+Montana,Lewis and Clark,2022,45
+Montana,Lincoln,2022,49
+Montana,Missoula,2022,54
+Montana,Phillips,2022,36
+Montana,Powder River,2022,39
+Montana,Powell,2022,12
+Montana,Ravalli,2022,27
+Montana,Richland,2022,39
+Montana,Roosevelt,2022,14
+Montana,Rosebud,2022,2
+Montana,Sanders,2022,36
+Montana,Sheridan,2022,16
+Montana,Silver Bow,2022,27
+Montana,Yellowstone,2022,32
+Nebraska,Cass,2022,19
+Nebraska,Douglas,2022,41
+Nebraska,Gage,2022,23
+Nebraska,Hall,2022,27
+Nebraska,Knox,2022,37
+Nebraska,Lancaster,2022,37
+Nebraska,Sarpy,2022,32
+Nebraska,Scotts Bluff,2022,16
+Nebraska,Thomas,2022,17
+Nebraska,Washington,2022,19
+Nevada,Carson City,2022,44
+Nevada,Churchill,2022,39
+Nevada,Clark,2022,64
+Nevada,Douglas,2022,20
+Nevada,Elko,2022,38
+Nevada,Lyon,2022,39
+Nevada,Nye,2022,22
+Nevada,Washoe,2022,51
+Nevada,White Pine,2022,44
+New Hampshire,Belknap,2022,32
+New Hampshire,Cheshire,2022,37
+New Hampshire,Coos,2022,40
+New Hampshire,Grafton,2022,36
+New Hampshire,Hillsborough,2022,39
+New Hampshire,Merrimack,2022,36
+New Hampshire,Rockingham,2022,40
+New Jersey,Atlantic,2022,36
+New Jersey,Bergen,2022,42
+New Jersey,Camden,2022,48
+New Jersey,Cumberland,2022,38
+New Jersey,Essex,2022,44
+New Jersey,Gloucester,2022,42
+New Jersey,Hudson,2022,44
+New Jersey,Hunterdon,2022,42
+New Jersey,Mercer,2022,46
+New Jersey,Middlesex,2022,42
+New Jersey,Monmouth,2022,38
+New Jersey,Morris,2022,36
+New Jersey,Ocean,2022,40
+New Jersey,Passaic,2022,38
+New Jersey,Union,2022,49
+New Jersey,Warren,2022,43
+New Mexico,Bernalillo,2022,63
+New Mexico,Catron,2022,12
+New Mexico,Chaves,2022,26
+New Mexico,Dona Ana,2022,53
+New Mexico,Eddy,2022,48
+New Mexico,Lea,2022,44
+New Mexico,Lincoln,2022,16
+New Mexico,Los Alamos,2022,14
+New Mexico,Luna,2022,17
+New Mexico,Rio Arriba,2022,40
+New Mexico,San Juan,2022,45
+New Mexico,Sandoval,2022,43
+New Mexico,Santa Fe,2022,44
+New Mexico,Socorro,2022,15
+New Mexico,Taos,2022,19
+New Mexico,Valencia,2022,41
+New York,Albany,2022,40
+New York,Bronx,2022,44
+New York,Chautauqua,2022,36
+New York,Dutchess,2022,35
+New York,Erie,2022,44
+New York,Essex,2022,41
+New York,Hamilton,2022,34
+New York,Jefferson,2022,32
+New York,Kings,2022,43
+New York,Monroe,2022,42
+New York,Nassau,2022,29
+New York,New York,2022,43
+New York,Niagara,2022,35
+New York,Oneida,2022,26
+New York,Onondaga,2022,37
+New York,Orange,2022,37
+New York,Oswego,2022,32
+New York,Putnam,2022,34
+New York,Queens,2022,47
+New York,Richmond,2022,40
+New York,Rockland,2022,38
+New York,Saratoga,2022,32
+New York,Steuben,2022,38
+New York,Suffolk,2022,42
+New York,Tompkins,2022,36
+New York,Wayne,2022,33
+New York,Westchester,2022,38
+North Carolina,Alexander,2022,37
+North Carolina,Avery,2022,38
+North Carolina,Buncombe,2022,38
+North Carolina,Caldwell,2022,40
+North Carolina,Carteret,2022,35
+North Carolina,Caswell,2022,39
+North Carolina,Catawba,2022,44
+North Carolina,Cumberland,2022,45
+North Carolina,Davidson,2022,47
+North Carolina,Durham,2022,42
+North Carolina,Edgecombe,2022,37
+North Carolina,Forsyth,2022,48
+North Carolina,Graham,2022,43
+North Carolina,Granville,2022,42
+North Carolina,Guilford,2022,46
+North Carolina,Haywood,2022,43
+North Carolina,Hyde,2022,21
+North Carolina,Johnston,2022,42
+North Carolina,Lenoir,2022,39
+North Carolina,Lincoln,2022,43
+North Carolina,Macon,2022,31
+North Carolina,Martin,2022,34
+North Carolina,Mecklenburg,2022,50
+North Carolina,Mitchell,2022,31
+North Carolina,Montgomery,2022,43
+North Carolina,New Hanover,2022,42
+North Carolina,Northampton,2022,33
+North Carolina,Person,2022,40
+North Carolina,Pitt,2022,37
+North Carolina,Rockingham,2022,41
+North Carolina,Rowan,2022,46
+North Carolina,Swain,2022,43
+North Carolina,Union,2022,41
+North Carolina,Wake,2022,46
+North Carolina,Yancey,2022,44
+North Dakota,Billings,2022,39
+North Dakota,Burke,2022,40
+North Dakota,Burleigh,2022,39
+North Dakota,Cass,2022,40
+North Dakota,Dunn,2022,37
+North Dakota,McKenzie,2022,35
+North Dakota,Mercer,2022,36
+North Dakota,Oliver,2022,40
+North Dakota,Ward,2022,37
+Ohio,Allen,2022,41
+Ohio,Ashtabula,2022,38
+Ohio,Athens,2022,27
+Ohio,Belmont,2022,15
+Ohio,Butler,2022,53
+Ohio,Clark,2022,46
+Ohio,Clermont,2022,44
+Ohio,Clinton,2022,40
+Ohio,Columbiana,2022,12
+Ohio,Cuyahoga,2022,54
+Ohio,Delaware,2022,37
+Ohio,Fayette,2022,35
+Ohio,Franklin,2022,48
+Ohio,Geauga,2022,40
+Ohio,Greene,2022,40
+Ohio,Hamilton,2022,54
+Ohio,Harrison,2022,33
+Ohio,Jefferson,2022,53
+Ohio,Knox,2022,39
+Ohio,Lake,2022,41
+Ohio,Lawrence,2022,45
+Ohio,Licking,2022,39
+Ohio,Lorain,2022,35
+Ohio,Lucas,2022,44
+Ohio,Madison,2022,39
+Ohio,Mahoning,2022,46
+Ohio,Medina,2022,41
+Ohio,Miami,2022,39
+Ohio,Montgomery,2022,48
+Ohio,Noble,2022,37
+Ohio,Portage,2022,41
+Ohio,Preble,2022,44
+Ohio,Scioto,2022,17
+Ohio,Stark,2022,49
+Ohio,Summit,2022,43
+Ohio,Trumbull,2022,42
+Ohio,Warren,2022,44
+Ohio,Washington,2022,39
+Ohio,Wood,2022,38
+Oklahoma,Adair,2022,43
+Oklahoma,Canadian,2022,43
+Oklahoma,Carter,2022,37
+Oklahoma,Cleveland,2022,49
+Oklahoma,Comanche,2022,47
+Oklahoma,Creek,2022,43
+Oklahoma,Dewey,2022,47
+Oklahoma,Grant,2022,28
+Oklahoma,Kay,2022,43
+Oklahoma,Kiowa,2022,44
+Oklahoma,Love,2022,45
+Oklahoma,Mayes,2022,39
+Oklahoma,McClain,2022,45
+Oklahoma,Nowata,2022,56
+Oklahoma,Oklahoma,2022,54
+Oklahoma,Osage,2022,44
+Oklahoma,Ottawa,2022,53
+Oklahoma,Pittsburg,2022,47
+Oklahoma,Pontotoc,2022,38
+Oklahoma,Sequoyah,2022,42
+Oklahoma,Tulsa,2022,52
+Oregon,Baker,2022,32
+Oregon,Benton,2022,21
+Oregon,Clackamas,2022,33
+Oregon,Columbia,2022,31
+Oregon,Crook,2022,24
+Oregon,Deschutes,2022,23
+Oregon,Douglas,2022,53
+Oregon,Grant,2022,46
+Oregon,Harney,2022,41
+Oregon,Jackson,2022,44
+Oregon,Jefferson,2022,26
+Oregon,Josephine,2022,39
+Oregon,Klamath,2022,38
+Oregon,Lake,2022,25
+Oregon,Lane,2022,44
+Oregon,Linn,2022,33
+Oregon,Marion,2022,36
+Oregon,Multnomah,2022,36
+Oregon,Umatilla,2022,39
+Oregon,Union,2022,28
+Oregon,Wallowa,2022,27
+Oregon,Wasco,2022,16
+Oregon,Washington,2022,37
+Pennsylvania,Adams,2022,47
+Pennsylvania,Allegheny,2022,56
+Pennsylvania,Armstrong,2022,48
+Pennsylvania,Beaver,2022,51
+Pennsylvania,Berks,2022,44
+Pennsylvania,Blair,2022,44
+Pennsylvania,Bradford,2022,40
+Pennsylvania,Bucks,2022,41
+Pennsylvania,Cambria,2022,52
+Pennsylvania,Centre,2022,44
+Pennsylvania,Chester,2022,45
+Pennsylvania,Clearfield,2022,35
+Pennsylvania,Cumberland,2022,44
+Pennsylvania,Dauphin,2022,48
+Pennsylvania,Delaware,2022,49
+Pennsylvania,Elk,2022,35
+Pennsylvania,Erie,2022,38
+Pennsylvania,Fayette,2022,43
+Pennsylvania,Franklin,2022,39
+Pennsylvania,Greene,2022,42
+Pennsylvania,Indiana,2022,42
+Pennsylvania,Lackawanna,2022,43
+Pennsylvania,Lancaster,2022,59
+Pennsylvania,Lawrence,2022,37
+Pennsylvania,Lebanon,2022,46
+Pennsylvania,Lehigh,2022,42
+Pennsylvania,Luzerne,2022,37
+Pennsylvania,Lycoming,2022,40
+Pennsylvania,Mercer,2022,40
+Pennsylvania,Monroe,2022,39
+Pennsylvania,Montgomery,2022,44
+Pennsylvania,Northampton,2022,45
+Pennsylvania,Philadelphia,2022,52
+Pennsylvania,Somerset,2022,34
+Pennsylvania,Susquehanna,2022,33
+Pennsylvania,Tioga,2022,39
+Pennsylvania,Washington,2022,52
+Pennsylvania,Westmoreland,2022,41
+Pennsylvania,Wyoming,2022,34
+Pennsylvania,York,2022,47
+Puerto Rico,Bayamon,2022,15
+Puerto Rico,Caguas,2022,9
+Puerto Rico,Catano,2022,35
+Puerto Rico,Fajardo,2022,25
+Puerto Rico,Guayama,2022,16
+Puerto Rico,Guaynabo,2022,29
+Puerto Rico,Mayagnez,2022,38
+Puerto Rico,Ponce,2022,18
+Rhode Island,Kent,2022,31
+Rhode Island,Providence,2022,43
+Rhode Island,Washington,2022,36
+South Carolina,Aiken,2022,37
+South Carolina,Anderson,2022,39
+South Carolina,Berkeley,2022,36
+South Carolina,Charleston,2022,47
+South Carolina,Chesterfield,2022,40
+South Carolina,Darlington,2022,36
+South Carolina,Edgefield,2022,43
+South Carolina,Florence,2022,44
+South Carolina,Greenville,2022,51
+South Carolina,Horry,2022,38
+South Carolina,Lexington,2022,39
+South Carolina,Richland,2022,43
+South Carolina,Spartanburg,2022,47
+South Carolina,York,2022,44
+South Dakota,Brookings,2022,36
+South Dakota,Brown,2022,23
+South Dakota,Clay,2022,38
+South Dakota,Codington,2022,41
+South Dakota,Custer,2022,41
+South Dakota,Hughes,2022,7
+South Dakota,Jackson,2022,40
+South Dakota,Meade,2022,39
+South Dakota,Minnehaha,2022,39
+South Dakota,Pennington,2022,40
+Tennessee,Anderson,2022,39
+Tennessee,Blount,2022,45
+Tennessee,Claiborne,2022,34
+Tennessee,Davidson,2022,52
+Tennessee,DeKalb,2022,35
+Tennessee,Dyer,2022,39
+Tennessee,Hamilton,2022,51
+Tennessee,Jefferson,2022,41
+Tennessee,Knox,2022,49
+Tennessee,Lawrence,2022,26
+Tennessee,Loudon,2022,39
+Tennessee,Madison,2022,41
+Tennessee,Maury,2022,33
+Tennessee,McMinn,2022,41
+Tennessee,Montgomery,2022,36
+Tennessee,Putnam,2022,32
+Tennessee,Roane,2022,36
+Tennessee,Sevier,2022,44
+Tennessee,Shelby,2022,46
+Tennessee,Sullivan,2022,40
+Tennessee,Sumner,2022,42
+Tennessee,Williamson,2022,41
+Tennessee,Wilson,2022,39
+Texas,Atascosa,2022,44
+Texas,Bell,2022,46
+Texas,Bexar,2022,55
+Texas,Bowie,2022,52
+Texas,Brazoria,2022,35
+Texas,Brazos,2022,40
+Texas,Brewster,2022,42
+Texas,Cameron,2022,48
+Texas,Collin,2022,40
+Texas,Culberson,2022,41
+Texas,Dallas,2022,52
+Texas,Denton,2022,47
+Texas,Ector,2022,37
+Texas,El Paso,2022,59
+Texas,Ellis,2022,38
+Texas,Galveston,2022,46
+Texas,Gregg,2022,35
+Texas,Harris,2022,60
+Texas,Harrison,2022,51
+Texas,Hidalgo,2022,49
+Texas,Hood,2022,38
+Texas,Hunt,2022,36
+Texas,Jefferson,2022,48
+Texas,Johnson,2022,41
+Texas,Karnes,2022,6
+Texas,Kaufman,2022,44
+Texas,Kleberg,2022,47
+Texas,Lubbock,2022,26
+Texas,Maverick,2022,36
+Texas,McLennan,2022,48
+Texas,Montgomery,2022,51
+Texas,Navarro,2022,44
+Texas,Nueces,2022,47
+Texas,Orange,2022,43
+Texas,Parker,2022,40
+Texas,Polk,2022,32
+Texas,Potter,2022,31
+Texas,Randall,2022,44
+Texas,Rockwall,2022,34
+Texas,Smith,2022,40
+Texas,Tarrant,2022,54
+Texas,Travis,2022,51
+Texas,Victoria,2022,30
+Texas,Webb,2022,45
+Texas,Wilson,2022,8
+Utah,Box Elder,2022,35
+Utah,Cache,2022,46
+Utah,Carbon,2022,43
+Utah,Davis,2022,47
+Utah,Duchesne,2022,48
+Utah,Garfield,2022,44
+Utah,Iron,2022,42
+Utah,Salt Lake,2022,60
+Utah,San Juan,2022,44
+Utah,Tooele,2022,44
+Utah,Uintah,2022,47
+Utah,Utah,2022,49
+Utah,Washington,2022,44
+Utah,Wayne,2022,12
+Utah,Weber,2022,48
+Vermont,Bennington,2022,37
+Vermont,Chittenden,2022,41
+Vermont,Rutland,2022,39
+Vermont,Windham,2022,11
+Virgin Islands,St Croix,2022,29
+Virgin Islands,St John,2022,19
+Virginia,Albemarle,2022,44
+Virginia,Arlington,2022,37
+Virginia,Bristol City,2022,32
+Virginia,Caroline,2022,36
+Virginia,Carroll,2022,7
+Virginia,Charles,2022,33
+Virginia,Chesterfield,2022,38
+Virginia,Fairfax,2022,47
+Virginia,Fauquier,2022,34
+Virginia,Frederick,2022,43
+Virginia,Giles,2022,38
+Virginia,Hampton City,2022,41
+Virginia,Hanover,2022,39
+Virginia,Henrico,2022,45
+Virginia,Hopewell City,2022,7
+Virginia,Loudoun,2022,37
+Virginia,Lynchburg City,2022,29
+Virginia,Madison,2022,40
+Virginia,Norfolk City,2022,18
+Virginia,Pittsylvania,2022,3
+Virginia,Prince Edward,2022,34
+Virginia,Prince William,2022,35
+Virginia,Richmond City,2022,42
+Virginia,Roanoke,2022,42
+Virginia,Rockbridge,2022,33
+Virginia,Rockingham,2022,34
+Virginia,Salem City,2022,33
+Virginia,Stafford,2022,35
+Virginia,Suffolk City,2022,38
+Virginia,Virginia Beach City,2022,33
+Virginia,Wythe,2022,39
+Washington,Adams,2022,18
+Washington,Asotin,2022,46
+Washington,Benton,2022,38
+Washington,Chelan,2022,34
+Washington,Clallam,2022,38
+Washington,Clark,2022,36
+Washington,Columbia,2022,37
+Washington,Cowlitz,2022,21
+Washington,Franklin,2022,23
+Washington,Garfield,2022,21
+Washington,Grant,2022,30
+Washington,Grays Harbor,2022,22
+Washington,Jefferson,2022,21
+Washington,King,2022,46
+Washington,Kitsap,2022,28
+Washington,Kittitas,2022,28
+Washington,Klickitat,2022,18
+Washington,Lewis,2022,26
+Washington,Mason,2022,23
+Washington,Okanogan,2022,52
+Washington,Pend Oreille,2022,26
+Washington,Pierce,2022,44
+Washington,Skagit,2022,33
+Washington,Snohomish,2022,39
+Washington,Spokane,2022,40
+Washington,Stevens,2022,43
+Washington,Thurston,2022,28
+Washington,Walla Walla,2022,25
+Washington,Whatcom,2022,32
+Washington,Whitman,2022,24
+Washington,Yakima,2022,51
+West Virginia,Berkeley,2022,38
+West Virginia,Brooke,2022,18
+West Virginia,Cabell,2022,39
+West Virginia,Gilmer,2022,37
+West Virginia,Greenbrier,2022,34
+West Virginia,Hancock,2022,34
+West Virginia,Harrison,2022,34
+West Virginia,Kanawha,2022,41
+West Virginia,Marion,2022,36
+West Virginia,Marshall,2022,52
+West Virginia,Monongalia,2022,37
+West Virginia,Ohio,2022,37
+West Virginia,Tucker,2022,35
+West Virginia,Wood,2022,39
+Wisconsin,Ashland,2022,36
+Wisconsin,Brown,2022,40
+Wisconsin,Columbia,2022,38
+Wisconsin,Dane,2022,45
+Wisconsin,Dodge,2022,42
+Wisconsin,Door,2022,36
+Wisconsin,Eau Claire,2022,41
+Wisconsin,Fond du Lac,2022,36
+Wisconsin,Forest,2022,37
+Wisconsin,Grant,2022,39
+Wisconsin,Jackson,2022,30
+Wisconsin,Jefferson,2022,38
+Wisconsin,Kenosha,2022,44
+Wisconsin,Kewaunee,2022,39
+Wisconsin,La Crosse,2022,41
+Wisconsin,Manitowoc,2022,38
+Wisconsin,Marathon,2022,35
+Wisconsin,Milwaukee,2022,49
+Wisconsin,Monroe,2022,32
+Wisconsin,Outagamie,2022,43
+Wisconsin,Ozaukee,2022,41
+Wisconsin,Racine,2022,40
+Wisconsin,Rock,2022,39
+Wisconsin,Sauk,2022,41
+Wisconsin,Sheboygan,2022,40
+Wisconsin,Taylor,2022,37
+Wisconsin,Vilas,2022,33
+Wisconsin,Walworth,2022,39
+Wisconsin,Waukesha,2022,47
+Wyoming,Albany,2022,48
+Wyoming,Big Horn,2022,38
+Wyoming,Campbell,2022,48
+Wyoming,Carbon,2022,9
+Wyoming,Converse,2022,40
+Wyoming,Fremont,2022,46
+Wyoming,Johnson,2022,39
+Wyoming,Laramie,2022,42
+Wyoming,Lincoln,2022,43
+Wyoming,Natrona,2022,42
+Wyoming,Park,2022,20
+Wyoming,Platte,2022,17
+Wyoming,Sheridan,2022,44
+Wyoming,Sublette,2022,45
+Wyoming,Sweetwater,2022,44
+Wyoming,Teton,2022,43
+Wyoming,Uinta,2022,7
+Wyoming,Weston,2022,40

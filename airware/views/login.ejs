@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login & Signup</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  button {
+    width: 95%;
+    padding: 10px;
+    background: #4a69bd;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #3c55a5;
+  }
+
+  .switch {
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #4a69bd;
+  }
+
+  .message {
+    margin-top: 15px;
+    font-size: 14px;
+    white-space: pre-wrap;
+  }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LOGIN -->
+  <div id="loginBox">
+    <h2>Login</h2>
+
+    <input id="loginEmail" type="email" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <div class="switch" onclick="toggle('signup')">Don't have an account? Sign up</div>
+
+    <div id="loginMsg" class="message"></div>
+  </div>
+
+  <!-- SIGNUP -->
+  <div id="signupBox" style="display:none">
+    <h2>Sign Up</h2>
+
+    <input id="name" type="text" placeholder="Name">
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <input id="state" type="text" placeholder="State">
+    <input id="county" type="text" placeholder="County">
+
+    <button onclick="signup()">Sign Up</button>
+
+    <div class="switch" onclick="toggle('login')">Already have an account? Log in</div>
+
+    <div id="signupMsg" class="message"></div>
+  </div>
+
+</div>
+
+<script>
+const BASE_URL = "/users";  // Uses the same Express route
+
+function toggle(view) {
+  document.getElementById("loginBox").style.display = view === "login" ? "block" : "none";
+  document.getElementById("signupBox").style.display = view === "signup" ? "block" : "none";
+}
+
+/* ---------------------- LOGIN ---------------------- */
+
+async function login() {
+  const email = document.getElementById("loginEmail").value;
+  const password = document.getElementById("loginPassword").value;
+
+  const res = await fetch(`${BASE_URL}/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, password })
+  });
+
+  const data = await res.json();
+
+  if (data.message === "Login successful") {
+    window.location.href = "/home"; // redirect to index.ejs
+  } else {
+    document.getElementById("loginMsg").innerText = data.message;
+  }
+}
+
+/* ---------------------- SIGNUP ---------------------- */
+
+async function signup() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const state = document.getElementById("state").value;
+  const county = document.getElementById("county").value;
+
+  const res = await fetch(`${BASE_URL}/signup`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, email, password, state, county })
+  });
+
+  const data = await res.json();
+
+  if (data.message === "User created successfully") {
+    window.location.href = "/home"; // go to main dashboard
+  } else {
+    document.getElementById("signupMsg").innerText = data.message;
+  }
+}
+
+</script>
+
+</body>
+</html>
